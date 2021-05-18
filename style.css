@@ -21,14 +21,14 @@ div{color:whitesmoke}
 
 #inicio1 {
     position: relative;
-    right:  -650px;
-    top: 0px;
+    right:  -700px;
+    top: 50px;
     width: 500px;
 
 }
-#titulo {
-    text-align: center;
-    font-size: 55px;
+#titulo1 {
+    text-align: right;
+    font-size: 60px;
 
 }
 #subtitulo {
@@ -42,10 +42,27 @@ div{color:whitesmoke}
 #inicio2 {
     position: relative;
     right: -20px;
-    top: -220px;
+    top: -90px;
     width: 200px;
     font-size: 20px;
     border: 1px solid white;
+}
+#tituloci {
+    right: -20px;
+    top: -90px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid white;
+    opacity: 0;
+    
+}
+#explicacionci {
+    right: -20px;
+    top: -90px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid white;
+    opacity: 0;
 }
 .textoinicio2 {
     text-align: center;
@@ -53,7 +70,7 @@ div{color:whitesmoke}
 #inicio3 {
     position: relative;
     right: -20px;
-    top: -620px;
+    top: -490px;
     width: 200px;
     font-size: 20px;
     border: 1px solid white;
@@ -62,26 +79,13 @@ div{color:whitesmoke}
     text-align: center;
 }
 
-#chile {
+#Chile {
     position: relative;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    top: -750px;
-    right: -80px;
-    height: 450px;
-    color: white;
+    top: -600px;
+    right: -380px;
 }
 
-.BotonDerecho{
-    text-align: left;
-    display: block;
-    background-color: grey;
-    color: white;
-    font-size: 20px;
-    width: 270px;
-    padding: 8px;    
-    margin: 8px;  
-}
+
 #hola{display:inline-block;
     text-align: right;
 }
@@ -100,7 +104,52 @@ div{color:whitesmoke}
     margin: 40px;
 }
 
-#CL-MA{
-    fill: yellow;
+.regiones{
+    fill: white;
     ;
+}
+
+
+#worldcontainer{
+    display: flex;
+}
+.textboxmundo{
+    display: inline-block;
+    border: solid;
+    border-color: white;
+}
+
+.worldmap{
+    color: beige;
+}
+
+.BotonDerecho{
+    text-align: left;
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+    width: 270px;
+    padding: 8px;    
+    margin: 8px;  
+}
+#derechos{ 
+    
+    background-color: gray;
+    width:300px;
+    display: inline-block
+}
+#contenido{
+    background-color: gray;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+
+}
+#contenid{
+    background-color: gray;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+
 }

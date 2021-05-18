@@ -11,6 +11,7 @@
    height="708.72205"
    width="612.5365"
    mapsvg:geoViewBox="-109.449403 -17.500036 -66.416233 -55.907355">
+   <link href="style.css" rel="stylesheet"/>
   <metadata
      id="metadata4339">
     <rdf:RDF>
