@@ -1,0 +1,106 @@
+div{color:whitesmoke}
+
+.topbutton {
+  background-color: #096cb5;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 180px;
+  padding: 10px 10px;
+  margin: 10px 15px;
+  font-size:16px;
+}
+
+
+.suptab {
+    text-align: center;
+    margin: 10px 80px;
+}
+
+#inicio1 {
+    position: relative;
+    right:  -650px;
+    top: 0px;
+    width: 500px;
+
+}
+#titulo {
+    text-align: center;
+    font-size: 55px;
+
+}
+#subtitulo {
+    text-align: center;
+    font-size: 35px;
+}
+#subsubtitulo {
+    text-align: center;
+    font-size: 23px;
+}
+#inicio2 {
+    position: relative;
+    right: -20px;
+    top: -220px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid white;
+}
+.textoinicio2 {
+    text-align: center;
+}
+#inicio3 {
+    position: relative;
+    right: -20px;
+    top: -620px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid white;
+}
+.textoinicio3 {
+    text-align: center;
+}
+
+#chile {
+    position: relative;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    top: -750px;
+    right: -80px;
+    height: 450px;
+    color: white;
+}
+
+.BotonDerecho{
+    text-align: left;
+    display: block;
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+    width: 270px;
+    padding: 8px;    
+    margin: 8px;  
+}
+#hola{display:inline-block;
+    text-align: right;
+}
+#titulo{
+    text-align: left;
+    font-size: 25px;
+}
+
+#tit{
+    font-size: 50px;
+    padding: 8px;    
+    margin: 8px; 
+
+}
+#niñes {
+    margin: 40px;
+}
+
+#CL-MA{
+    fill: yellow;
+    ;
+}
