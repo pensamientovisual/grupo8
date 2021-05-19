@@ -100,10 +100,27 @@ div{color:whitesmoke}
     margin: 8px; 
 
 }
-#niñes {
-    margin: 40px;
+.niñes {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 70px;
+    padding: 10px 10px;
+    margin: 10px 15px;
 }
-
+.vic {
+    display: inline-table;
+    text-decoration: none;
+    right: -20px;
+    top: -90px;
+    width: 60px;
+    height: 100px;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 10px 10px;
+    margin: 10px 15px;
+    text-align: center;
+}
 .regiones{
     fill: white;
     ;
@@ -125,31 +142,28 @@ div{color:whitesmoke}
 
 .BotonDerecho{
     text-align: left;
-    display: inline-block;
+    display: block;
     background-color: grey;
     color: white;
-    font-size: 20px;
-    width: 270px;
+    font-size: 26px;
+    width: 350px;
     padding: 8px;    
-    margin: 8px;  
+    margin: 30px 8px 8px;  
 }
 #derechos{ 
-    
-    background-color: gray;
     width:300px;
-    display: inline-block
+    display: inline-table;
 }
 #contenido{
     background-color: gray;
-    width: 400px;
+    width: 600px;
     height: 300px;
-    display: inline-block;
+    display: inline-table;
+}
+
+#LineaMedio{
+    display:inline-block;
+    fill:aquamarine;
 
 }
-#contenid{
-    background-color: gray;
-    width: 400px;
-    height: 300px;
-    display: inline-block;
-
 }
