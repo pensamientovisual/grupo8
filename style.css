@@ -46,6 +46,12 @@ body {
     .bar1:hover text,
     .bar1:focus text {
     fill:white;
+}
+.texbar1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    fill: white;
+    
 
 }
 .chart2{
@@ -70,6 +76,12 @@ body {
     .bar2:focus text {
     fill:white;
 }
+.texbar2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    fill: white;
+    
+}
 .chart3{
     position: relative;
     border: 1px solid white;
@@ -92,6 +104,12 @@ body {
     .bar3:focus text {
     fill:white;
 }
+.texbar3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    fill: white;
+    
+}
 .chart4{
     position: relative;
     border: 1px solid white;
@@ -113,6 +131,12 @@ body {
     .bar4:hover text,
     .bar4:focus text {
     fill:white;
+}
+.texbar4 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    fill: white;
+    
     }    
 
 .chart5{
@@ -136,6 +160,12 @@ body {
     .bar5:hover text,
     .bar5:focus text {
     fill:white;
+}
+.texbar5 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    fill: white;
+    
     }   
 .suptab {
     text-align: center;
@@ -167,7 +197,7 @@ body {
 #inicio2 {
     position: relative;
     right: -32px;
-    top: -270px;
+    top: -100px;
     width: 200px;
     font-size: 20px;
     border: 1px solid white;
@@ -217,14 +247,15 @@ body {
 }
 #inicio3 {
     position: absolute;
-    right: 1020px;
-    top: 460px;
+    right: 1022px;
+    top: 150px;
     width: 200px;
     font-size: 20px;
     border: 1px solid white;
 }
 .textoinicio3 {
     text-align: center;
+    color: rgb(206, 52, 52);
 }
 
 #Chile {
@@ -304,7 +335,7 @@ body {
     display: block;
     background-color: grey;
     color: white;
-    font-size: 26px;
+    font-size: 21px;
     width: 350px;
     padding: 8px;    
     margin: 30px 8px 8px;  
@@ -325,7 +356,7 @@ body {
 
 #LineaMedio{
     display:inline-table;
-    height: 520px;
+    height: 430px;
     width: 8px;
     background-color: lightgray;
     margin:10px;
@@ -373,56 +404,60 @@ body {
 }
 
 .Canada{
-    fill:#5e90b5;
+    fill:#ececec;
 }
 
-.Australia{
-    fill:#5e90b5;
-}
+/*.Australia{
+    fill:#ececec;
+}*/
 
 .Chile2{
-    fill:#5e90b5;
+    fill:#ececec;
 }
 
 .United_States{
-    fill:#5e90b5;
+    fill:#ececec;
 }
 
 /* FIN DE LOS PAISES DE MATI */
 
-#subtite {
+#subtitex {
     font-size: 40px;
     text-align: center;
 }
 
-#iniciativa1 {
-    text-align: center;
-    position: relative;
-    right: -100px;
-    top: 192px;
-    width: 200px;
-    font-size: 20px;
-    border: 1px solid white;
-    padding: 5px;
+#ContenedorIniciativa {
+    display:flex;
+    margin:auto;
+    width: 60%;
+    padding: 50px;
+    
 }
 
-#iniciativa2 {
+#iniciativa1{
+    border:solid 3px;
+    border-color:white;
+    padding: 20px;
+    margin:10px;
     text-align: center;
-    position: relative;
-    right: -900px;
-    top: 100px;
-    width: 200px;
-    font-size: 20px;
-    border: 1px solid white;
-    padding: 5px;
+    width: 30%;
 }
-#iniciativacentro {
+
+#iniciativacentro{
+    border:solid;
+    border-color:white;
+    padding: 20px;
+    margin:10px;
     text-align: center;
-    position: relative;
-    right: -500px;
-    top: 100px;
-    width: 200px;
-    font-size: 20px;
-    border: 1px solid white;
-    padding: 5px;
 }
+
+#iniciativa2{
+    border:solid 3px;
+    border-color:white;
+    padding: 20px;
+    margin:10px;
+    text-align: center;
+    width: 30%;
+}
+
+

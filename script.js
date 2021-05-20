@@ -24,6 +24,7 @@ $(document).ready(function(){
     var tci = $("#tituloci");
     var eci = $("#explicacionci");
     var regiones = $(".regiones");
+    var iniciativas=$(".iniciat");
     var chile = $(".chile");
     var BotonDerecho= $(".BotonDerecho");
     var BDclickeado= false;
@@ -44,6 +45,8 @@ $(document).ready(function(){
     var r14=$("#CL-LR");
     var r15=$("#CL-BI");
     var r16=$("#CL-NU");
+    var in1=$("#iniciativa1")
+    var in2=$("#iniciativa2")
 
     /*Mati*/
     var Canada=$(".Canada");
@@ -192,7 +195,11 @@ $(document).ready(function(){
     regiones.mouseenter(function(){
         $(this).fadeTo("fast",0.5)
         
-    });   
+    });  
+    
+    iniciativas.mouseenter(function(){
+        $(this).fadeTo("fast",0.5)
+    });
 
     regiones.click(function(){
         $(".regiones").css("fill","white")
@@ -304,9 +311,20 @@ $(document).ready(function(){
 
     });
     
+    in1.click(function(){
+        $("#iniciativacentro").text("El objeto del Servicio es garantizar la protección especializada de niños, niñas y adolescentes gravemente amenazados o vulnerados en sus derechos, entendida como el diagnóstico especializado, la restitución de los derechos, la reparación del daño producido y la prevención de nuevas vulneraciones, asegurando la provisión y ejecución de programas especializados para abordar casos de mediana y alta complejidad. ")
+    });
+    in2.click(function(){
+        $("#iniciativacentro").text("jbdjhc2")
+    });
+    
     
 
     regiones.mouseleave(function(){
+        $(this).fadeTo("fast",1)
+    });
+
+    iniciativas.mouseleave(function(){
         $(this).fadeTo("fast",1)
     });
 
@@ -529,33 +547,33 @@ $(document).ready(function(){
 /* MAPAS MATI NO TOCAR PLS */
     
     Canada.mouseenter(function(){ /* Se podrá poner una función no más?*/
-        Canada.fadeTo("fast",0.5)
+        Canada.css("fill","#096cb5")
         pais.text("Canada")
         pais_desc.text("En Canada........")
     });
 
     Canada.mouseleave(function(){
-        Canada.fadeTo("fast",1)
+        Canada.css("fill","#ececec")
     });
 
     EstadosUnidos.mouseenter(function(){ /* Se podrá poner una función no más?*/
-        EstadosUnidos.fadeTo("fast",0.5)
+        EstadosUnidos.css("fill","#096cb5")
         pais.text("Estados Unidos")
         pais_desc.text("Existe un sistema de servicios protección infantil (CPS, children protection services). Para los casos de negligencia infantil o similares, los niños pueden ser relocalizados con parientes cercanos (kinship services), o en el sistema de orfanato conocido como Foster Homes. El objetivo de este servicio es que una familia entrenada se haga responsable de un infante durante al menos dos años, mientras a la familia original se le hagan capacitaciones. Cada año se evalúa el retorno de los niños a su familia original, y en promedio, los niños pasan 2 años en una Foster Home.")
     });
     
     EstadosUnidos.mouseleave(function(){
-        EstadosUnidos.fadeTo("fast",1)
+        EstadosUnidos.css("fill","#ececec")
     });
 
     Chile2.mouseenter(function(){
-        Chile2.fadeTo("fast",0.5)
+        Chile2.css("fill","#096cb5")
         pais.text("Chile")
-        pais_desc.text("En Chile está el sename, una institución cuestionada xd")
+        pais_desc.text("En Chile está el sename, una institución cuestionada, etc.")
     });  
     
     Chile2.mouseleave(function(){
-        Chile2.fadeTo("fast",1)
+        Chile2.css("fill","#ececec")
         
     });
 
