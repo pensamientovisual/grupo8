@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
 <html>
     <head> 
         <link href="style.css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-       
+        
 
     </head>
     <body bgcolor="212121">
@@ -17,8 +17,9 @@
             <button class=topbutton id="BotonIniciativas">Iniciativas</button>
             <button class=topbutton id="BotonMundo">Mundo</button>
         </div>
+        <!--<img id= "menu" src="menu.svg" alt=" menu" width="80">-->
+        <hr>
         
-    
         <div id="Inicio"> 
             <div id= "inicio1">
                 <p id="subtitulo"> SENAME EN CHILE: </p>
@@ -585,7 +586,7 @@
         
 
         </div>
-        <hr/>
+        
         <!--<div id="barchart_material" class="grafico"></div> grafico-->
         <div id="CausalesDeIngreso"> 
             <p id= "tit">Causales de Ingreso</p>
@@ -641,55 +642,178 @@
         </div>
         
         <div id="DDHH">
+            <p id= "tit">Derechos Humanos</p>
             <div id=derechos>
+            
             <button class=BotonDerecho id="DerechoALaEducacion"> Derecho a la Educación</button>
             <button class=BotonDerecho id="DerechoAVivirEnFamilia"> Derecho a vivir en familia</button>
             <button class=BotonDerecho id="DerechoARecibirTratamiento"> Derecho a Recibir tratamiento</button>
             <button class=BotonDerecho id="DerechoALaIntegridad"> Derecho a la integridad física, psiquica y la integridad sexual</button>
             <button class=BotonDerecho id="DerechoALaSalud"> Derecho a la Salud</button>
+            </div>
+        
+
+            <div id=LineaMedio>l</div>
+            <div id=precontenido> Haz click en algún derecho</div>
+            <div id=contenido>
+                <div id=Porcentaje class=DDHHdato>Hola!</div>
+                <div id=Lin1 class=DDHHdato> l </div>
+                <div id=Dato1 class=DDHHdato>Haz click en un derecho</div>
+                <div id=Grafico class=DDHHdato>        
+                    <div id="g1" class="graficos">
+                        <svg class="chart1" width="420" height="150" aria-labelledby="title desc" role="img"><!-- Gráfico 1 -->
+                            <title id="title1">Derecho a la Educación</title>
+                            <desc id="desc1">Nada; Nada; Niñxs analfabetxs; No tiene registro escolar; Niñxs con retraso escolar</desc>
+                            <g class="bar2">
+                                <rect width="40" height="19"></rect>
+                                <text x="45" y="9.5" dy=".35em">Dato 1</text>
+                            </g>
+                            <g class="bar2">
+                                <rect width="150" height="19" y="20"></rect>
+                                <text x="155" y="28" dy=".35em">Dato 2</text>
+                            </g>
+                            <g class="bar1">
+                                <rect width="160" height="19" y="40"></rect>
+                                <text x="165" y="48" dy=".35em">Dato 3</text>
+                            </g>
+                            <g class="bar1">
+                                <rect width="230" height="19" y="60"></rect>
+                                <text x="235" y="68" dy=".35em">Dato 4</text>
+                            </g>
+                            <g class="bar1">
+                                <rect width="80" height="19" y="80"></rect>
+                                <text x="85" y="88" dy=".35em">Dato 5</text>
+                            </g>
+                            <g class="bar1">
+                                <text x="85" y="108" dy=".0em">Derecho 1</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="g2" class="graficos">
+                        <svg class="chart2" width="420" height="150" aria-labelledby="title desc" role="img"><!-- Gráfico 1 -->
+                            <title id="title2">Gráfico 2</title>
+                            <desc id="desc2">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
+                            <g class="bar2">
+                                <rect width="150" height="19"></rect>
+                                <text x="155" y="9.5" dy=".35em">Dato 1</text>
+                            </g>
+                            <g class="bar2">
+                                <rect width="160" height="19" y="20"></rect>
+                                <text x="165" y="28" dy=".35em">Dato 2</text>
+                            </g>
+                            <g class="bar2">
+                                <rect width="40" height="19" y="40"></rect>
+                                <text x="45" y="48" dy=".35em">Dato 3</text>
+                            </g>
+                            <g class="bar2">
+                                <rect width="80" height="19" y="60"></rect>
+                                <text x="85" y="68" dy=".35em">Dato 4</text>
+                            </g>
+                            <g class="bar2">
+                                <rect width="230" height="19" y="80"></rect>
+                                <text x="235" y="88" dy=".35em">Dato 5</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="g3" class="graficos">
+                        <svg class="chart3" width="420" height="150" aria-labelledby="title desc" role="img"><!-- Gráfico 1 -->
+                            <title id="title3">Gráfico 3</title>
+                            <desc id="desc3">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
+                            <g class="bar3">
+                                <rect width="230" height="19"></rect>
+                                <text x="235" y="9.5" dy=".35em">Dato 1</text>
+                            </g>
+                            <g class="bar3">
+                                <rect width="80" height="19" y="20"></rect>
+                                <text x="85" y="28" dy=".35em">Dato 2</text>
+                            </g>
+                            <g class="bar3">
+                                <rect width="160" height="19" y="40"></rect>
+                                <text x="165" y="48" dy=".35em">Dato 3</text>
+                            </g>
+                            <g class="bar3">
+                                <rect width="150" height="19" y="60"></rect>
+                                <text x="155" y="68" dy=".35em">Dato 4</text>
+                            </g>
+                            <g class="bar3">
+                                <rect width="40" height="19" y="80"></rect>
+                                <text x="45" y="88" dy=".35em">Dato 5</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="g4" class="graficos">
+                        <svg class="chart4" width="420" height="150" aria-labelledby="title desc" role="img"><!-- Gráfico 1 -->
+                            <title id="title4">Gráfico 4</title>
+                            <desc id="desc4">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
+                            <g class="bar4">
+                                <rect width="80" height="19"></rect>
+                                <text x="85" y="9.5" dy=".35em">Dato 1</text>
+                            </g>
+                            <g class="bar4">
+                                <rect width="40" height="19" y="20"></rect>
+                                <text x="45" y="28" dy=".35em">Dato 2</text>
+                            </g>
+                            <g class="bar4">
+                                <rect width="230" height="19" y="40"></rect>
+                                <text x="235" y="48" dy=".35em">Dato 3</text>
+                            </g>
+                            <g class="bar4">
+                                <rect width="160" height="19" y="60"></rect>
+                                <text x="165" y="68" dy=".35em">Dato 4</text>
+                            </g>
+                            <g class="bar4">
+                                <rect width="150" height="19" y="80"></rect>
+                                <text x="155" y="88" dy=".35em">Dato 5</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="g5" class="graficos">
+                        <svg class="chart5" width="420" height="150" aria-labelledby="title desc" role="img"><!-- Gráfico 1 -->
+                            <title id="title5">Gráfico 5</title>
+                            <desc id="desc5">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
+                            <g class="bar5">
+                                <rect width="160" height="19"></rect>
+                                <text x="165" y="9.5" dy=".35em">Dato 1</text>
+                            </g>
+                            <g class="bar5">
+                                <rect width="230" height="19" y="20"></rect>
+                                <text x="235" y="28" dy=".35em">Dato 2</text>
+                            </g>
+                            <g class="bar5">
+                                <rect width="150" height="19" y="40"></rect>
+                                <text x="155" y="48" dy=".35em">Dato 3</text>
+                            </g>
+                            <g class="bar5">
+                                <rect width="40" height="19" y="60"></rect>
+                                <text x="45" y="68" dy=".35em">Dato 4</text>
+                            </g>
+                            <g class="bar5">
+                                <rect width="80" height="19" y="80"></rect>
+                                <text x="85" y="88" dy=".35em">Dato 5</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div id= Dato2 class=DDHHdato>(la información no está completa)</div>
+            </div> 
+        
         </div>
         
-        <svg class="chart" width="420" height="150" aria-labelledby="title desc" role="img">
-            <title id="title">A bar chart showing information</title>
-            <desc id="desc">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
-            <g class="bar">
-                <rect width="40" height="19"></rect>
-                <text x="45" y="9.5" dy=".35em">4 apples</text>
-            </g>
-            <g class="bar">
-                <rect width="80" height="19" y="20"></rect>
-                <text x="85" y="28" dy=".35em">8 bananas</text>
-            </g>
-            <g class="bar">
-                <rect width="150" height="19" y="40"></rect>
-                <text x="150" y="48" dy=".35em">15 kiwis</text>
-            </g>
-            <g class="bar">
-                <rect width="160" height="19" y="60"></rect>
-                <text x="161" y="68" dy=".35em">16 oranges</text>
-            </g>
-            <g class="bar">
-                <rect width="230" height="19" y="80"></rect>
-                <text x="235" y="88" dy=".35em">23 lemons</text>
-            </g>
-        </svg>
-        
-        <div id=contenido>
-            <div id=Porcentaje class=DDHHdato>20</div>
-            <div id=Lin1 class=DDHHdato> l </div>
-            <div id=Dato1 class=DDHHdato>koala</div>
-            <div id=Grafico class=DDHHdato>pim pum</div>
-            <div id= Dato2 class=DDHHdato>owo</div>
-        </div> 
-
-        
         <div id="Iniciativas"> 
-            <p>Iniciativas</p> 
+            <p id= "tit">Iniciativas</p> 
+            <p id= "subtitex">¿Qué se realizará para mejorar la situación en Chile?</p>
+
+            <div id= "iniciativa1"> Servicio Nacional de Protección a la Niñez y Adolescencia</div>
+            <div id= "iniciativa2"> Servicio Nacional de Reinserción Social Juvenil</div>
+            <div id="iniciativacentro"> Haz click en alguna de las iniciativas para conocer más sobre ellas...</div>
+            <div id="fondo1"></div>
+            <div id="fondo2"></div>
         </div> 
     
-        <hr/>
+        
 
         <div id="Mundo"> <!-- Div de mati no tocar pls -->
+            <p id= "tit">Mundo</p> 
             <h3>¿Qué hacen otros países?</h3>
             <div id=worldcontainer>
                 <div>

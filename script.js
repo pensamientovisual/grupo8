@@ -44,17 +44,27 @@ $(document).ready(function(){
     var r14=$("#CL-LR");
     var r15=$("#CL-BI");
     var r16=$("#CL-NU");
+
+    /*Mati*/
     var Canada=$(".Canada");
     var Chile2=$(".Chile2");
     var pais=$("#pais");
     var pais_desc=$("#pais_desc")
+    var EstadosUnidos = $(".United_States")
+
+    /*ARI*/
     var ds=$("#DerechoALaSalud");
     var dvf=$("#DerechoAVivirEnFamilia");
     var de=$("#DerechoALaEducacion");
     var di=$("#DerechoALaIntegridad");
     var dt=$("#DerechoARecibirTratamiento");
+    var contenido=$("#contenido");
+    var precontenido=$("#precontenido");
+    var topmenu=false
+
     var niñesoff =true;
-    var x = $("#x")
+    var x = $("#x");
+    /*var menu = $("#menu")*/
 
     /*variables para los botones*/
     var Inicio=$("#Inicio");
@@ -69,9 +79,9 @@ $(document).ready(function(){
     var BotonIniciativas=$("#BotonIniciativas");
     var BotonMundo=$("#BotonMundo");
     
-    CausalesDeIngreso.hide();
-    DDHH.hide();
-    Iniciativas.hide();
+    CausalesDeIngreso.hide()
+    DDHH.hide()
+    Iniciativas.hide()
     Mundo.hide()
 
     BotonInicio.click(function(){
@@ -80,7 +90,7 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.hide()
         Mundo.hide()
-    });
+    })
 
     BotonCausalesDeIngreso.click(function(){
         Inicio.hide()
@@ -88,7 +98,7 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.hide()
         Mundo.hide()
-    });
+    })
 
     BotonDDHH.click(function(){
         Inicio.hide()
@@ -96,7 +106,7 @@ $(document).ready(function(){
         DDHH.show()
         Iniciativas.hide()
         Mundo.hide()
-    });
+    })
 
     BotonIniciativas.click(function(){
         Inicio.hide()
@@ -104,17 +114,32 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.show()
         Mundo.hide()
-    });
+    })
 
     BotonMundo.click(function(){
-        Inicio.hide();
-        DDHH.hide();
-        CausalesDeIngreso.hide();
-        Iniciativas.hide();
-        Mundo.show();
-    });
+        Inicio.hide()
+        CausalesDeIngreso.hide()
+        DDHH.hide()
+        Iniciativas.hide()
+        Mundo.show()
+    })
 
-//esto es un  mini comentario
+    /* topbutton.hide();
+    menu.click(function(){
+        if (topmenu==false){
+            topbutton.show();
+            topmenu=true;}
+        else {
+            topbutton.hide();
+            topmenu=false};
+        }); */
+    
+
+    /* topbutton.click(function(){
+        topbutton.hide();
+        topmenu=false;}); */
+
+    
     topbutton.mouseenter(function(){
         $(this).fadeTo("fast",0.5);   
     });   
@@ -122,6 +147,7 @@ $(document).ready(function(){
     topbutton.mouseleave(function(){
         $(this).fadeTo("fast",1);
     });
+
       
     niñes.mouseenter(function(){
         if (niñesoff==true) {
@@ -169,7 +195,10 @@ $(document).ready(function(){
     });   
 
     regiones.click(function(){
+        $(".regiones").css("fill","white")
         $(this).css("fill","#e84145")
+        
+            //$(this).css("background-color" ,"#e84145")
         //var region = $(this).attr("title")
         //$(".textoinicio3").text(region)
         
@@ -279,10 +308,13 @@ $(document).ready(function(){
 
     regiones.mouseleave(function(){
         $(this).fadeTo("fast",1)
-       
-    //cosas Ari
-    
     });
+
+    //cosas Ari
+
+    
+    contenido.hide()
+    
     BotonDerecho.mouseenter(function(){
         $(this).fadeTo("fast",0.5)
 
@@ -292,49 +324,51 @@ $(document).ready(function(){
 
     });
     BotonDerecho.click(function(){
-  
-        if (BDclickeado==false){
-
+            $(".BotonDerecho").css("background-color" ,"grey")
             $(this).css("background-color" ,"#e84145")
-            BDclickeado=true}
-        
-        else{
-        
-            $(this).css("background-color" ,"grey")
-            BDclickeado=false}
+            contenido.show()
+            precontenido.hide()
+                 
     });
     
+    //mostrar datos derechos
     
+
     de.click(function(){
-        $("#Porcentaje").text("20");
-        $("#Dato1").text("pim pam") ;
-        $("#Grafico").text("graficazo");
-        $("#Dato2").text("wen dato");
+        $("#Porcentaje").text("20%");
+        $("#Dato1").text("*dato porcentaje 1") ;
+        $("#Dato2").text("información gráfico 1");
+        $(".graficos").hide()
+        $("#g1").show()
     });
 
     dvf.click(function(){
-        $("#Porcentaje").text("32")
-        $("#Dato1").text("pim pum") 
-        $("#Grafico").text("wen grafico 2");
-        $("#Dato2").text("RIP");
+        $("#Porcentaje").text("32%")
+        $("#Dato1").text("*dato porcentaje 2") 
+        $("#Dato2").text("información gráfico 2");
+        $(".graficos").hide()
+        $("#g2").show()
     });
     dt.click(function(){
-        $("#Porcentaje").text("43");
-        $("#Dato1").text("pum pem") ;
-        $("#Grafico").text("graficazo 3");
-        $("#Dato2").text("owo");
+        $("#Porcentaje").text("43%");
+        $("#Dato1").text("*dato porcentaje 3") ;
+        $("#Dato2").text("información gráfico 3");
+        $(".graficos").hide()
+        $("#g3").show()
     });
     di.click(function(){
-        $("#Porcentaje").text("54");
-        $("#Dato1").text("pen pen") ;
-        $("#Grafico").text("graficazo 4");
-        $("#Dato2").text("uwu");
+        $("#Porcentaje").text("54%");
+        $("#Dato1").text("*dato porcentaje 4") ;
+        $("#Dato2").text("información gráfico 4");
+        $(".graficos").hide()
+        $("#g4").show()
     });
     ds.click(function(){
-        $("#Porcentaje").text("65");
-        $("#Dato1").text("piu piun") ;
-        $("#Grafico").text("graficazo 4");
-        $("#Dato2").text("uwu");
+        $("#Porcentaje").text("65%");
+        $("#Dato1").text("*dato porcentaje 5") ;
+        $("#Dato2").text("información gráfico 5");
+        $(".graficos").hide()
+        $("#g5").show()
     });
 
     //fin cosas Ari
@@ -499,10 +533,20 @@ $(document).ready(function(){
         pais.text("Canada")
         pais_desc.text("En Canada........")
     });
-    
+
     Canada.mouseleave(function(){
         Canada.fadeTo("fast",1)
-    })
+    });
+
+    EstadosUnidos.mouseenter(function(){ /* Se podrá poner una función no más?*/
+        EstadosUnidos.fadeTo("fast",0.5)
+        pais.text("Estados Unidos")
+        pais_desc.text("Existe un sistema de servicios protección infantil (CPS, children protection services). Para los casos de negligencia infantil o similares, los niños pueden ser relocalizados con parientes cercanos (kinship services), o en el sistema de orfanato conocido como Foster Homes. El objetivo de este servicio es que una familia entrenada se haga responsable de un infante durante al menos dos años, mientras a la familia original se le hagan capacitaciones. Cada año se evalúa el retorno de los niños a su familia original, y en promedio, los niños pasan 2 años en una Foster Home.")
+    });
+    
+    EstadosUnidos.mouseleave(function(){
+        EstadosUnidos.fadeTo("fast",1)
+    });
 
     Chile2.mouseenter(function(){
         Chile2.fadeTo("fast",0.5)
@@ -513,10 +557,7 @@ $(document).ready(function(){
     Chile2.mouseleave(function(){
         Chile2.fadeTo("fast",1)
         
-    })
-
-    
-    
+    });
 
 
 

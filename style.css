@@ -1,5 +1,12 @@
 div{color:whitesmoke}
 
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*.suptab{
+    background-color: gray;
+}*/
 .topbutton {
   background-color: #096cb5;
   border: none;
@@ -12,28 +19,124 @@ div{color:whitesmoke}
   margin: 10px 15px;
   font-size:16px;
 }
-.chart{
+.chart1{
     position: relative;
+    border: 1px solid white;
 }
-.bar {
+/*#menu{
+    fill: white;
+    position: absolute;
+    
+    
+}*/
+.bar1 { /*Gráfico 1*/
     fill: #e84145; /* changes the background */
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
     }
-    .bar text {
+    .bar1 text {
     color: white;
     }
-    .bar:hover,
-    .bar:focus {
+    .bar1:hover,
+    .bar1:focus {
     fill: white;
     }
-    .bar:hover text,
-    .bar:focus text {
+    .bar1:hover text,
+    .bar1:focus text {
     fill:white;
-    }
 
+}
+.chart2{
+    position: relative; 
+    border: 1px solid white;  
+}
+.bar2 { /*Gráfico 2*/
+    fill: #e84145; /* changes the background */
+    height: 21px;
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    }
+    .bar2 text {
+    color: white;
+    }
+    .bar2:hover,
+    .bar2:focus {
+    fill: white;
+    }
+    .bar2:hover text,
+    .bar2:focus text {
+    fill:white;
+}
+.chart3{
+    position: relative;
+    border: 1px solid white;
+    }
+.bar3 { /*Gráfico 3*/
+    fill: #e84145; /* changes the background */
+    height: 21px;
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    }
+    .bar3 text {
+    color: white;
+    }
+    .bar3:hover,
+    .bar3:focus {
+    fill: white;
+    }
+    .bar3:hover text,
+    .bar3:focus text {
+    fill:white;
+}
+.chart4{
+    position: relative;
+    border: 1px solid white;
+    }
+.bar4 { /*Gráfico 4*/
+    fill: #e84145; /* changes the background */
+    height: 21px;
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    }
+    .bar4 text {
+    color: white;
+    }
+    .bar4:hover,
+    .bar4:focus {
+    fill: white;
+    }
+    .bar4:hover text,
+    .bar4:focus text {
+    fill:white;
+    }    
+
+.chart5{
+    position: relative;
+    border: 1px solid white;
+    }
+.bar5 { /*Gráfico 5*/
+    fill: #e84145; /* changes the background */
+    height: 21px;
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    }
+    .bar5 text {
+    color: white;
+    }
+    .bar5:hover,
+    .bar5:focus {
+    fill: white;
+    }
+    .bar5:hover text,
+    .bar5:focus text {
+    fill:white;
+    }   
 .suptab {
     text-align: center;
     margin: 10px 80px;
@@ -83,7 +186,7 @@ div{color:whitesmoke}
     right: -400px;
     top: -550px;
     width: 400px;
-    height: 130px;
+    
     font-size: 40px;
     border: 1px solid white;
     opacity: 0;
@@ -143,10 +246,10 @@ div{color:whitesmoke}
     font-size: 50px;
     padding: 8px;    
     margin: 8px; 
-
+    color: #e84145;
 }
 #subtit{
-    font-size: 20px;
+    font-size:20px;
     padding: 8px;    
     margin: 8px; 
 
@@ -156,8 +259,8 @@ div{color:whitesmoke}
     text-decoration: none;
     display: inline-block;
     width: 70px;
-    padding: 10px 10px;
-    margin: 10px 15px;
+    padding: 20px 10px 0px;
+    margin: 0px 15px;
 }
 .vic {
     display: inline-table;
@@ -166,10 +269,10 @@ div{color:whitesmoke}
     top: -90px;
     width: 60px;
     height: 100px;
-    font-size: 15px;
+    font-size: 13px;
     border: 1px solid white;
     padding: 10px 10px;
-    margin: 10px 15px;
+    margin: 0px 17px;
     text-align: center;
 }
 .regiones{
@@ -182,11 +285,14 @@ div{color:whitesmoke}
     display: flex;
     height: 450px;
 }
-.textboxmundo{
-    display: inline-block;
+#textboxmundo{
     border: solid;
     border-color: white;
-    height:400px;
+    padding:10px;
+    margin:20px;
+    width: 300px
+    
+
 }
 
 .worldmap{
@@ -194,7 +300,7 @@ div{color:whitesmoke}
 }
 /*cosas de Ari*/
 .BotonDerecho{
-    text-align: left;
+    text-align: center;
     display: block;
     background-color: grey;
     color: white;
@@ -202,6 +308,7 @@ div{color:whitesmoke}
     width: 350px;
     padding: 8px;    
     margin: 30px 8px 8px;  
+    
 }
 #derechos{ 
     width:300px;
@@ -209,14 +316,16 @@ div{color:whitesmoke}
 }
 #contenido{
     background-color: rgb(49, 49, 49);
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 450px;
     display: inline-table;
+    padding: 8px;    
+    margin: 30px 8px 8px; 
 }
 
 #LineaMedio{
     display:inline-table;
-    height: 500px;
+    height: 520px;
     width: 8px;
     background-color: lightgray;
     margin:10px;
@@ -225,14 +334,15 @@ div{color:whitesmoke}
 .DDHHdato{
     display:inline-table;
     width: 200px;
+    margin:10px;
 }
 
 #Porcentaje{
-    height:200px;
-    font-size: 200;
+    height:20px;
+    font-size: 20px;
     color: rgb(206, 52, 52);
     background-color: rgb(75, 75, 75);
-    margin: 0 30 0 0;
+    display: inline-block;
 }
 
 #Lin1{
@@ -243,27 +353,76 @@ div{color:whitesmoke}
     margin:10px;
 }
 #Dato1{
-    font-size:40;
-    margin:10 0 0 20;
+    font-size: 20px;
+    margin:10px 0px 0px 20px;
 
-    
+}
+#Dato2{
+    font-size: 20px;
+}
+#precontenido{
+    display: inline-block ;
+    text-align: center;
+    height: 480px;
+    width: 600px;
 }
 /* PAISES DE MATI */
 
+#pais_desc{
+    font-size: 1vw;
+}
+
 .Canada{
-    fill:lightgreen;
+    fill:#5e90b5;
 }
 
 .Australia{
-    fill:lightgreen;
+    fill:#5e90b5;
 }
 
 .Chile2{
-    fill:lightgreen;
+    fill:#5e90b5;
 }
 
 .United_States{
-    fill:lightgreen;
+    fill:#5e90b5;
 }
 
 /* FIN DE LOS PAISES DE MATI */
+
+#subtite {
+    font-size: 40px;
+    text-align: center;
+}
+
+#iniciativa1 {
+    text-align: center;
+    position: relative;
+    right: -100px;
+    top: 192px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#iniciativa2 {
+    text-align: center;
+    position: relative;
+    right: -900px;
+    top: 100px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px;
+}
+#iniciativacentro {
+    text-align: center;
+    position: relative;
+    right: -500px;
+    top: 100px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px;
+}

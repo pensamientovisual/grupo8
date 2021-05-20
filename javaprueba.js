@@ -19,7 +19,7 @@ $( "li" ).each(function( index ) {
         return false;
 
 $( ".BotonDerecho" ).click(function() {
-    $( "BotonDerecho" ).each(function( index, element ) {
+    $( ".BotonDerecho" ).each(function( index, element ) {
               // element == this
         if ($( element ).css( "backgroundColor", "#e84145" )){
             $(element).css( "backgroundColor", "grey")
@@ -73,5 +73,3 @@ var acc = document.getElementsByClassName("accordion");
         $(".Grafico").text("graficazo 4")
         $("Dato2").text("uwu")
     });
-
-    var de= 
