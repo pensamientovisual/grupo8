@@ -1,7 +1,7 @@
 div{color:whitesmoke}
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /*.suptab{
@@ -19,39 +19,67 @@ body {
   margin: 10px 15px;
   font-size:16px;
 }
+
+.botonchile {
+    background-color: #096cb5;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+button {
+    font-family: 'Rubik', sans-serif;
+}
+
+#Inicio{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#botoneschile{
+    width: 45%;
+    margin: 5%;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 1%;
+}
+
 .chart1{
     position: relative;
     border: 1px solid white;
 }
-/*#menu{
+
+
+/* Menu y Títulos de sección */
+
+#ParteDeArriba{
+    display:flex;
+}
+
+#TituloSeccion{
+    width:100%;
+    font-size: 50px;
+    color: #e84145;
+    justify-self: center;
+}
+
+#menu{
     fill: white;
-    position: absolute;
-    
-    
-}*/
+    height:20px;
+    width:20px;
+}
+
+/* Fin de titulos de sección*/
+
 .bar1 { /*Gráfico 1*/
     fill: #e84145; /* changes the background */
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
-    }
-    .bar1 text {
-    color: white;
-    }
-    .bar1:hover,
-    .bar1:focus {
-    fill: white;
-    }
-    .bar1:hover text,
-    .bar1:focus text {
-    fill:white;
-}
-.texbar1 {
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    fill: white;
-    
 
 }
 .chart2{
@@ -63,24 +91,7 @@ body {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
-    }
-    .bar2 text {
-    color: white;
-    }
-    .bar2:hover,
-    .bar2:focus {
-    fill: white;
-    }
-    .bar2:hover text,
-    .bar2:focus text {
-    fill:white;
-}
-.texbar2 {
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    fill: white;
-    
+
 }
 .chart3{
     position: relative;
@@ -92,23 +103,6 @@ body {
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
-    }
-    .bar3 text {
-    color: white;
-    }
-    .bar3:hover,
-    .bar3:focus {
-    fill: white;
-    }
-    .bar3:hover text,
-    .bar3:focus text {
-    fill:white;
-}
-.texbar3 {
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    fill: white;
-    
 }
 .chart4{
     position: relative;
@@ -120,23 +114,6 @@ body {
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
-    }
-    .bar4 text {
-    color: white;
-    }
-    .bar4:hover,
-    .bar4:focus {
-    fill: white;
-    }
-    .bar4:hover text,
-    .bar4:focus text {
-    fill:white;
-}
-.texbar4 {
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    fill: white;
-    
     }    
 
 .chart5{
@@ -149,22 +126,6 @@ body {
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
-    }
-    .bar5 text {
-    color: white;
-    }
-    .bar5:hover,
-    .bar5:focus {
-    fill: white;
-    }
-    .bar5:hover text,
-    .bar5:focus text {
-    fill:white;
-}
-.texbar5 {
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    fill: white;
     
     }   
 .suptab {
@@ -173,10 +134,7 @@ body {
 }
 
 #inicio1 {
-    position: relative;
-    right:  -700px;
-    top: 50px;
-    width: 500px;
+    width: 40%;
 
 }
 
@@ -195,12 +153,11 @@ body {
     font-size: 23px;
 }
 #inicio2 {
-    position: relative;
-    right: -32px;
-    top: -100px;
-    width: 200px;
+    width: 45%;
     font-size: 20px;
     border: 1px solid white;
+    margin: 5%;
+    padding: 1%;
 }
 #x {
       font-size: 40px;
@@ -246,22 +203,15 @@ body {
     text-align: center;
 }
 #inicio3 {
-    position: absolute;
-    right: 1022px;
-    top: 150px;
-    width: 200px;
+    width: 45%;
     font-size: 20px;
     border: 1px solid white;
+    margin: 5%;
+    padding: 1%;
 }
 .textoinicio3 {
     text-align: center;
     color: rgb(206, 52, 52);
-}
-
-#Chile {
-    position: absolute;
-    right: 700px;
-    top: 130px;
 }
 
 
@@ -273,18 +223,22 @@ body {
     font-size: 25px;
 }
 
-#tit{
-    font-size: 50px;
-    padding: 8px;    
-    margin: 8px; 
-    color: #e84145;
-}
+
 #subtit{
     font-size:20px;
     padding: 8px;    
     margin: 8px; 
 
 }
+
+#NinosSuperior{
+    display:flex;
+}
+
+#NinosInferior{
+    display:flex;
+}
+
 .niñes {
     text-align: center;
     text-decoration: none;
@@ -293,6 +247,7 @@ body {
     padding: 20px 10px 0px;
     margin: 0px 15px;
 }
+
 .vic {
     display: inline-table;
     text-decoration: none;
@@ -311,7 +266,6 @@ body {
     ;
 }
 
-
 #worldcontainer{
     display: flex;
     height: 450px;
@@ -322,14 +276,14 @@ body {
     padding:10px;
     margin:20px;
     width: 300px
-    
-
 }
 
 .worldmap{
     color: beige;
 }
-/*cosas de Ari*/
+
+/*DDHH */
+
 .BotonDerecho{
     text-align: center;
     display: block;
@@ -339,7 +293,6 @@ body {
     width: 350px;
     padding: 8px;    
     margin: 30px 8px 8px;  
-    
 }
 #derechos{ 
     width:300px;
@@ -369,11 +322,12 @@ body {
 }
 
 #Porcentaje{
-    height:20px;
-    font-size: 20px;
+    height:200px;
+    font-size: 100px;
     color: rgb(206, 52, 52);
     background-color: rgb(75, 75, 75);
-    display: inline-block;
+    display: inline-flex;
+    justify-content: left;
 }
 
 #Lin1{
@@ -397,6 +351,8 @@ body {
     height: 480px;
     width: 600px;
 }
+
+/*FIN DDHH*/
 /* PAISES DE MATI */
 
 #pais_desc{
@@ -431,7 +387,6 @@ body {
     margin:auto;
     width: 60%;
     padding: 50px;
-    
 }
 
 #iniciativa1{
@@ -449,6 +404,7 @@ body {
     padding: 20px;
     margin:10px;
     text-align: center;
+    width: 40%;
 }
 
 #iniciativa2{

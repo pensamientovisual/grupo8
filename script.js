@@ -67,7 +67,8 @@ $(document).ready(function(){
 
     var niñesoff =true;
     var x = $("#x");
-    /*var menu = $("#menu")*/
+    var menu = $("#menu");
+    var TituloSeccion=$("#TituloSeccion");
 
     /*variables para los botones*/
     var Inicio=$("#Inicio");
@@ -93,6 +94,8 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.hide()
         Mundo.hide()
+        $("#TituloSeccion").text()
+
     })
 
     BotonCausalesDeIngreso.click(function(){
@@ -101,6 +104,8 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.hide()
         Mundo.hide()
+        $("#TituloSeccion").text("Causales de Ingreso")
+        
     })
 
     BotonDDHH.click(function(){
@@ -109,6 +114,7 @@ $(document).ready(function(){
         DDHH.show()
         Iniciativas.hide()
         Mundo.hide()
+        $("#TituloSeccion").text("Derechos Humanos")
     })
 
     BotonIniciativas.click(function(){
@@ -117,6 +123,7 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.show()
         Mundo.hide()
+        $("#TituloSeccion").text("Iniciativas")
     })
 
     BotonMundo.click(function(){
@@ -125,9 +132,10 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.hide()
         Mundo.show()
+        $("#TituloSeccion").text("Mundo")
     })
 
-    /* topbutton.hide();
+    topbutton.hide();
     menu.click(function(){
         if (topmenu==false){
             topbutton.show();
@@ -135,12 +143,12 @@ $(document).ready(function(){
         else {
             topbutton.hide();
             topmenu=false};
-        }); */
+        });
     
 
-    /* topbutton.click(function(){
+    topbutton.click(function(){
         topbutton.hide();
-        topmenu=false;}); */
+        topmenu=false;});
 
     
     topbutton.mouseenter(function(){
@@ -148,7 +156,7 @@ $(document).ready(function(){
     });   
 
     topbutton.mouseleave(function(){
-        $(this).fadeTo("fast",1);
+       $(this).fadeTo("fast",1);
     });
 
       
@@ -348,6 +356,8 @@ $(document).ready(function(){
             precontenido.hide()
                  
     });
+
+    
     
     //mostrar datos derechos
     
@@ -576,11 +586,6 @@ $(document).ready(function(){
         Chile2.css("fill","#ececec")
         
     });
-
-
-
-    
-
 
     
 });

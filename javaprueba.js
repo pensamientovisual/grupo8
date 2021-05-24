@@ -39,7 +39,7 @@ var acc = document.getElementsByClassName("accordion");
         this.classList.add("active");
         this.nextElementSibling.classList.add("show");
       };
-    }
+    };
 
 
     $("DerechoALaEducacion").click(function(){
@@ -72,4 +72,26 @@ var acc = document.getElementsByClassName("accordion");
         $(".Dato1").text("pen pen") 
         $(".Grafico").text("graficazo 4")
         $("Dato2").text("uwu")
+    });
+
+
+    $("#panel").slideDown("slow");
+    $("#panel").slideToggle("slow");
+    $("#flip").click(function(){
+      $("#panel").slideUp();
+    });
+
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("div").animate({
+          left: '250px',
+          opacity: '0.5',
+          height: '150px',
+          width: '150px'
+        });
+      });
+    });
+
+    $("#stop").click(function(){
+      $("#panel").stop();
     });
