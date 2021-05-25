@@ -82,6 +82,15 @@ $(document).ready(function(){
     var BotonDDHH=$("#BotonDDHH");
     var BotonIniciativas=$("#BotonIniciativas");
     var BotonMundo=$("#BotonMundo");
+    var subtab = $(".subtab")
+
+    topbutton.mouseenter(function(){
+        $(this).css("background-color","#09558B");   
+    });   
+
+    topbutton.mouseleave(function(){
+        $(this).css("background-color"," #096cb5")
+    });
     
     CausalesDeIngreso.hide()
     DDHH.hide()
@@ -94,7 +103,7 @@ $(document).ready(function(){
         DDHH.hide()
         Iniciativas.hide()
         Mundo.hide()
-        $("#TituloSeccion").text()
+        $("#TituloSeccion").text("Inicio")
 
     })
 
@@ -151,13 +160,7 @@ $(document).ready(function(){
         topmenu=false;});
 
     
-    topbutton.mouseenter(function(){
-        $(this).fadeTo("fast",0.5);   
-    });   
-
-    topbutton.mouseleave(function(){
-       $(this).fadeTo("fast",1);
-    });
+    
 
       
     niñes.mouseenter(function(){

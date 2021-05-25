@@ -12,6 +12,7 @@ body {
   border: none;
   color: white;
   text-align: center;
+  
   text-decoration: none;
   display: inline-block;
   width: 180px;
@@ -57,25 +58,38 @@ button {
 
 #ParteDeArriba{
     display:flex;
+    height:130px;
 }
 
 #TituloSeccion{
     width:100%;
     font-size: 50px;
     color: #e84145;
-    justify-self: center;
+    margin:10%;
 }
 
 #menu{
     fill: white;
     height:20px;
     width:20px;
+    justify-self:left;
 }
 
 /* Fin de titulos de sección*/
-
+.chart1{
+    position: relative; 
+    border: 1px solid white;
+}
 .bar1 { /*Gráfico 1*/
     fill: #e84145; /* changes the background */
+    height: 21px;
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+
+}
+.bar11 {
+    fill:rgb(75, 75, 75);
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
@@ -91,7 +105,12 @@ button {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
-
+}
+.bar22 {
+    fill:rgb(75, 75, 75);
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
 }
 .chart3{
     position: relative;
@@ -104,6 +123,12 @@ button {
     cursor: pointer;
     font-family: Helvetica, sans-serif;
 }
+.bar33 {
+    fill:rgb(75, 75, 75);
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+}
 .chart4{
     position: relative;
     border: 1px solid white;
@@ -111,6 +136,12 @@ button {
 .bar4 { /*Gráfico 4*/
     fill: #e84145; /* changes the background */
     height: 21px;
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+}
+.bar44 {
+    fill:rgb(75, 75, 75);
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
@@ -126,8 +157,13 @@ button {
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
-    
-    }   
+}
+.bar55 {
+    fill:rgb(75, 75, 75);
+    transition: fill .3s ease;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+}   
 .suptab {
     text-align: center;
     margin: 10px 80px;
@@ -223,12 +259,10 @@ button {
     font-size: 25px;
 }
 
-
 #subtit{
     font-size:20px;
     padding: 8px;    
     margin: 8px; 
-
 }
 
 #NinosSuperior{
@@ -256,7 +290,7 @@ button {
     width: 60px;
     height: 100px;
     font-size: 13px;
-    border: 1px solid white;
+    
     padding: 10px 10px;
     margin: 0px 17px;
     text-align: center;
@@ -309,7 +343,7 @@ button {
 
 #LineaMedio{
     display:inline-table;
-    height: 430px;
+    height: 350px;
     width: 8px;
     background-color: lightgray;
     margin:10px;
@@ -317,13 +351,13 @@ button {
 }
 .DDHHdato{
     display:inline-table;
-    width: 200px;
     margin:10px;
+    justify-content:center ;
 }
 
 #Porcentaje{
-    height:200px;
-    font-size: 100px;
+    
+    font-size: 120px;
     color: rgb(206, 52, 52);
     background-color: rgb(75, 75, 75);
     display: inline-flex;
@@ -331,10 +365,10 @@ button {
 }
 
 #Lin1{
-    height:200px;
+    height:100px;
     width: 8px;
     background-color: whitesmoke;
-    display:inline-table;
+    display:inline-flex;
     margin:10px;
 }
 #Dato1{
