@@ -17,6 +17,7 @@ $( "li" ).each(function( index ) {
       if ( $( this ).is( "#stop" ) ) {
         $( "span" ).text( "Stopped at div index #" + index );
         return false;
+      };
 
 $( ".BotonDerecho" ).click(function() {
     $( ".BotonDerecho" ).each(function( index, element ) {

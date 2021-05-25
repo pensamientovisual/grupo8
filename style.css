@@ -44,8 +44,9 @@ button {
     width: 45%;
     margin: 5%;
     font-size: 15px;
-    border: 1px solid white;
     padding: 1%;
+    border-radius: 5px;
+    background-color: #3d3d3d
 }
 
 .chart1{
@@ -59,6 +60,7 @@ button {
 #ParteDeArriba{
     display:flex;
     height:130px;
+    justify-content: space-between;
 }
 
 #TituloSeccion{
@@ -74,8 +76,40 @@ button {
     width:20px;
     justify-self:left;
 }
-
+#Referencias{
+    fill:#353535;
+}
 /* Fin de titulos de sección*/
+
+/*Inicio Botones siguiente*/
+.BotSigs{
+    font-size: 20px;
+    display: block
+
+}
+#BotonSiguiente1{
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+/*Fin Botones siguiente*/
+
+/*GRAFICOS*/
+
+.graficos{
+    padding: 10px;
+    width: 600px;
+    
+}
+
+#Grafico{
+    width:100%;
+}
+
+.textbar1{
+    fill: white;
+}
 .chart1{
     position: relative; 
     border: 1px solid white;
@@ -85,7 +119,7 @@ button {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
+    font-size: small;
 
 }
 .bar11 {
@@ -93,8 +127,6 @@ button {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
-
 }
 .chart2{
     position: relative; 
@@ -105,12 +137,12 @@ button {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
+    font-size: small;
 }
 .bar22 {
     fill:rgb(75, 75, 75);
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
 }
 .chart3{
     position: relative;
@@ -121,13 +153,13 @@ button {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
+    font-size: small;
 }
 .bar33 {
     fill:rgb(75, 75, 75);
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
+    font-size: small;
 }
 .chart4{
     position: relative;
@@ -138,13 +170,12 @@ button {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
+    font-size: small;
 }
 .bar44 {
     fill:rgb(75, 75, 75);
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
     }    
 
 .chart5{
@@ -156,13 +187,13 @@ button {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
+    /*font-family: Helvetica, sans-serif;*/
+    font-size: small;
 }
 .bar55 {
     fill:rgb(75, 75, 75);
     transition: fill .3s ease;
     cursor: pointer;
-    font-family: Helvetica, sans-serif;
 }   
 .suptab {
     text-align: center;
@@ -191,9 +222,10 @@ button {
 #inicio2 {
     width: 45%;
     font-size: 20px;
-    border: 1px solid white;
     margin: 5%;
     padding: 1%;
+    border-radius: 5px;
+    background-color: #3d3d3d;
 }
 #x {
       font-size: 40px;
@@ -230,6 +262,11 @@ button {
 }
 .textoinicio2 {
     text-align: center;
+    color: white;
+}
+.textoinicio4 {
+    text-align: center;
+    color: white;
 }
    
 .textoinicio31 {
@@ -241,9 +278,11 @@ button {
 #inicio3 {
     width: 45%;
     font-size: 20px;
-    border: 1px solid white;
     margin: 5%;
     padding: 1%;
+    border-radius: 5px;
+    background-color: #3d3d3d
+
 }
 .textoinicio3 {
     text-align: center;
@@ -297,7 +336,6 @@ button {
 }
 .regiones{
     fill: white;
-    ;
 }
 
 #worldcontainer{
@@ -352,6 +390,7 @@ button {
 .DDHHdato{
     display:inline-table;
     margin:10px;
+    max-width: 400px;
     justify-content:center ;
 }
 
@@ -382,7 +421,7 @@ button {
 #precontenido{
     display: inline-block ;
     text-align: center;
-    height: 480px;
+    height: 390px;
     width: 600px;
 }
 
@@ -416,38 +455,9 @@ button {
     text-align: center;
 }
 
-#ContenedorIniciativa {
-    display:flex;
-    margin:auto;
-    width: 60%;
-    padding: 50px;
+
+
+#CL-AI{
+    fill: white;
+    opacity: 1.0;
 }
-
-#iniciativa1{
-    border:solid 3px;
-    border-color:white;
-    padding: 20px;
-    margin:10px;
-    text-align: center;
-    width: 30%;
-}
-
-#iniciativacentro{
-    border:solid;
-    border-color:white;
-    padding: 20px;
-    margin:10px;
-    text-align: center;
-    width: 40%;
-}
-
-#iniciativa2{
-    border:solid 3px;
-    border-color:white;
-    padding: 20px;
-    margin:10px;
-    text-align: center;
-    width: 30%;
-}
-
-

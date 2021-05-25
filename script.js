@@ -65,22 +65,45 @@ $(document).ready(function(){
     var precontenido=$("#precontenido");
     var topmenu=false
 
+    var BotSig1=$("#BotonSiguiente1");
+    var BotSig2=$("#BotonSiguiente2");
+    var BotSig3=$("#BotonSiguiente3");
+    var BotSig4=$("#BotonSiguiente4");
+    var BotSig5=$("#BotonSiguiente5");
+    var Ok=$(".Ok");
+    /*Fin var ARI */
+
+    var boton1=$("#boton1");
+
     var niñesoff =true;
     var x = $("#x");
     var menu = $("#menu");
     var TituloSeccion=$("#TituloSeccion");
 
+    var lista_info=[];
+
+    d3.csv("pensamiento - Hoja 1.csv", function(dato){
+        lista_info.push([dato.region, dato.id, dato.niños_sename_region, dato.niños_total_sename, dato.total_niños_region])
+    })
+    var i;
+    boton1.click(function(){
+        for (i=0; i<16; i++){
+            var id_region=$("#"+"lista_info[i][1]")
+            id_region.css("opacity", "(lista.info[i][3])/10")
+        }
+    });
+
     /*variables para los botones*/
     var Inicio=$("#Inicio");
     var CausalesDeIngreso=$("#CausalesDeIngreso");
     var DDHH=$("#DDHH");
-    var Iniciativas=$("#Iniciativas");
+    var Historia=$("#Historia");
     var Mundo=$("#Mundo");
     
     var BotonInicio=$("#BotonInicio");
     var BotonCausalesDeIngreso=$("#BotonCausalesDeIngreso");
     var BotonDDHH=$("#BotonDDHH");
-    var BotonIniciativas=$("#BotonIniciativas");
+    var BotonHistoria=$("#BotonHistoria");
     var BotonMundo=$("#BotonMundo");
     var subtab = $(".subtab")
 
@@ -94,14 +117,14 @@ $(document).ready(function(){
     
     CausalesDeIngreso.hide()
     DDHH.hide()
-    Iniciativas.hide()
+    Historia.hide()
     Mundo.hide()
 
     BotonInicio.click(function(){
         Inicio.show()
         CausalesDeIngreso.hide()
         DDHH.hide()
-        Iniciativas.hide()
+        Historia.hide()
         Mundo.hide()
         $("#TituloSeccion").text("Inicio")
 
@@ -111,7 +134,7 @@ $(document).ready(function(){
         Inicio.hide()
         CausalesDeIngreso.show()
         DDHH.hide()
-        Iniciativas.hide()
+        Historia.hide()
         Mundo.hide()
         $("#TituloSeccion").text("Causales de Ingreso")
         
@@ -121,25 +144,25 @@ $(document).ready(function(){
         Inicio.hide()
         CausalesDeIngreso.hide()
         DDHH.show()
-        Iniciativas.hide()
+        Historia.hide()
         Mundo.hide()
         $("#TituloSeccion").text("Derechos Humanos")
     })
 
-    BotonIniciativas.click(function(){
+    BotonHistoria.click(function(){
         Inicio.hide()
         CausalesDeIngreso.hide()
         DDHH.hide()
-        Iniciativas.show()
+        Historia.show()
         Mundo.hide()
-        $("#TituloSeccion").text("Iniciativas")
+        $("#TituloSeccion").text("Historia del Sename")
     })
 
     BotonMundo.click(function(){
         Inicio.hide()
         CausalesDeIngreso.hide()
         DDHH.hide()
-        Iniciativas.hide()
+        Historia.hide()
         Mundo.show()
         $("#TituloSeccion").text("Mundo")
     })
@@ -207,10 +230,6 @@ $(document).ready(function(){
         $(this).fadeTo("fast",0.5)
         
     });  
-    
-    iniciativas.mouseenter(function(){
-        $(this).fadeTo("fast",0.5)
-    });
 
     regiones.click(function(){
         $(".regiones").css("fill","white")
@@ -322,24 +341,12 @@ $(document).ready(function(){
 
     });
     
-    in1.click(function(){
-        $("#iniciativacentro").text("El objeto del Servicio es garantizar la protección especializada de niños, niñas y adolescentes gravemente amenazados o vulnerados en sus derechos, entendida como el diagnóstico especializado, la restitución de los derechos, la reparación del daño producido y la prevención de nuevas vulneraciones, asegurando la provisión y ejecución de programas especializados para abordar casos de mediana y alta complejidad. ")
-    });
-    in2.click(function(){
-        $("#iniciativacentro").text("jbdjhc2")
-    });
-    
-    
-
     regiones.mouseleave(function(){
         $(this).fadeTo("fast",1)
     });
 
-    iniciativas.mouseleave(function(){
-        $(this).fadeTo("fast",1)
-    });
 
-    //cosas Ari
+    //cosas DDHH
 
     
     contenido.hide()
@@ -367,41 +374,76 @@ $(document).ready(function(){
 
     de.click(function(){
         $("#Porcentaje").text("20%");
-        $("#Dato1").text("*dato porcentaje 1") ;
-        $("#Dato2").text("información gráfico 1");
+        $("#Dato1").text("*dato porcentaje 1: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum") ;
+        $("#Dato2").text("información gráfico 1 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
         $(".graficos").hide()
         $("#g1").show()
     });
 
     dvf.click(function(){
         $("#Porcentaje").text("32%")
-        $("#Dato1").text("*dato porcentaje 2") 
-        $("#Dato2").text("información gráfico 2");
+        $("#Dato1").text("*dato porcentaje 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") 
+        $("#Dato2").text("información gráfico 2  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
         $(".graficos").hide()
         $("#g2").show()
     });
     dt.click(function(){
         $("#Porcentaje").text("43%");
-        $("#Dato1").text("*dato porcentaje 3") ;
-        $("#Dato2").text("información gráfico 3");
+        $("#Dato1").text("*dato porcentaje 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") ;
+        $("#Dato2").text("información gráfico 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
         $(".graficos").hide()
         $("#g3").show()
     });
     di.click(function(){
         $("#Porcentaje").text("54%");
-        $("#Dato1").text("*dato porcentaje 4") ;
-        $("#Dato2").text("información gráfico 4");
+        $("#Dato1").text("*dato porcentaje 4  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") ;
+        $("#Dato2").text("información gráfico 4 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
         $(".graficos").hide()
         $("#g4").show()
     });
     ds.click(function(){
         $("#Porcentaje").text("65%");
-        $("#Dato1").text("*dato porcentaje 5") ;
-        $("#Dato2").text("información gráfico 5");
+        $("#Dato1").text("*dato porcentaje 5  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") ;
+        $("#Dato2").text("información gráfico 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
         $(".graficos").hide()
         $("#g5").show()
     });
+    //Botones siguientes
 
+    BotSig1.click(function(){
+        Ok.hide();
+        CausalesDeIngreso.show();
+        $("#TituloSeccion").text("Causales de Ingreso")
+
+    });
+
+    BotSig2.click(function(){
+        Ok.hide();
+        DDHH.show();
+        $("#TituloSeccion").text("Derechos Humanos");
+
+    });
+
+    BotSig3.click(function(){
+        Ok.hide();
+        Historia.show();
+        $("#TituloSeccion").text("Historia del Sename")
+
+    });
+
+    BotSig4.click(function(){
+        Ok.hide(); 
+        Mundo.show();
+        $("#TituloSeccion").text("Mundo")
+            
+    });
+
+    BotSig5.click(function(){
+        Ok.hide();
+        Inicio.show();
+        $("#TituloSeccion").text("Inicio")
+
+    });
     //fin cosas Ari
 
     n2.click(function(){ 
@@ -590,5 +632,5 @@ $(document).ready(function(){
         
     });
 
-    
+
 });
