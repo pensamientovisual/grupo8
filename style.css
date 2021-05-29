@@ -27,22 +27,22 @@ body {
     color: white;
     text-align: center;
     display: inline-block;
+    height: 20px;
 }
 
 button {
     font-family: 'Rubik', sans-serif;
 }
 
-#Inicio{
+#Inicio0{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
     width: 100%;
 }
-
 #botoneschile{
-    width: 45%;
-    margin: 5%;
+    width: 100%;
+    margin: 4% 1% 1% 1%;
     font-size: 15px;
     padding: 1%;
     border-radius: 5px;
@@ -90,6 +90,7 @@ button {
 #BotonSiguiente1{
     font-size: 20px;
     border-radius: 5px;
+    margin: 0px 0px 0px 700px;
 }
 
 
@@ -201,7 +202,8 @@ button {
 }
 
 #inicio1 {
-    width: 40%;
+    text-align: center;
+    width: 100%;
 
 }
 
@@ -213,19 +215,37 @@ button {
 }
 #subtitulo {
     text-align: center;
-    font-size: 40px;
+    font-size: 80px;
+    font-family: 'Rubik', sans-serif;
+    color: #e84145;
+    font-weight: bolder;
+    padding: 1px;
+    border: 1px;
+    margin: 1px;
+}
+#subtitulo0 {
+    text-align: center;
+    font-size: 55px;
+    width:90%; 
+    justify-content: center;
+    display:inline-block;
+    margin: 2% 0%;
 }
 #subsubtitulo {
     text-align: center;
     font-size: 23px;
 }
 #inicio2 {
-    width: 45%;
+    width: 100%;
     font-size: 20px;
-    margin: 5%;
+    margin: 1% 1% 1% 1%;
     padding: 1%;
     border-radius: 5px;
     background-color: #3d3d3d;
+}
+#problemasinicio {
+    width:20%;
+    margin: 0% 10% 0% 0%;
 }
 #x {
       font-size: 40px;
@@ -267,22 +287,44 @@ button {
 .textoinicio4 {
     text-align: center;
     color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #5fa6d8;
 }
-   
+#textoinicioregiones {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
 .textoinicio31 {
     text-align: center;
 }
 .textoinicio32 {
     text-align: center;
 }
+.textoinicio33 {
+    text-align: center;
+}
 #inicio3 {
-    width: 45%;
+    width: 100%;
     font-size: 20px;
-    margin: 5%;
-    padding: 1%;
+    margin: 0% 0% 0% 5%;
+    padding: 3%;
     border-radius: 5px;
     background-color: #3d3d3d
-
+}
+#inicio5 {
+    width: 100%;
+    height: 20%;
+    font-size: 20px;
+    margin: 0% 0% 10% 5%;
+    padding: 3%;
+    border-radius: 5px;
+    background-color: #3d3d3d
+}
+#inicio3y5 {
+    width:20%;
+    margin: 0% 0% 0% 10%;
 }
 .textoinicio3 {
     text-align: center;
@@ -458,6 +500,93 @@ button {
 
 
 #CL-AI{
-    fill: white;
+    fill: hsl(6, 78%, 66%);
     opacity: 1.0;
+}
+#CL-MA{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-TA{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-AN{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-AT{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-CO{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-RM{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-VS{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-AR{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-LI{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-LL{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-ML{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-AP{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-LR{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-BI{
+    fill:hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+#CL-NU{
+    fill: hsl(6, 78%, 66%);
+    opacity: 1.0;
+}
+
+.alinear1{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+.alinear2{
+    width:80%;
+}
+#iniciotestimonio{
+    width:70%;
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    margin: 0% 15% 0% 15%;
+    color: #096cb5;
+}
+#inicionombretestimonio{
+    font-weight: bolder;
+    margin: 3% 2% 7% 0%;
+    text-align: right;
 }

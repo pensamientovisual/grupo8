@@ -45,15 +45,15 @@ $(document).ready(function(){
     var r14=$("#CL-LR");
     var r15=$("#CL-BI");
     var r16=$("#CL-NU");
-    var in1=$("#iniciativa1")
-    var in2=$("#iniciativa2")
+    var in1=$("#iniciativa1");
+    var in2=$("#iniciativa2");
 
     /*Mati*/
     var Canada=$(".Canada");
     var Chile2=$(".Chile2");
     var pais=$("#pais");
-    var pais_desc=$("#pais_desc")
-    var EstadosUnidos = $(".United_States")
+    var pais_desc=$("#pais_desc");
+    var EstadosUnidos = $(".United_States");
 
     /*ARI*/
     var ds=$("#DerechoALaSalud");
@@ -74,24 +74,475 @@ $(document).ready(function(){
     /*Fin var ARI */
 
     var boton1=$("#boton1");
+    var boton2=$("#boton2");
+    var boton3=$("#boton3");
 
     var niñesoff =true;
     var x = $("#x");
     var menu = $("#menu");
     var TituloSeccion=$("#TituloSeccion");
 
-    var lista_info=[];
+    var texto123=$("#textoinicioregiones")
 
-    d3.csv("pensamiento - Hoja 1.csv", function(dato){
-        lista_info.push([dato.region, dato.id, dato.niños_sename_region, dato.niños_total_sename, dato.total_niños_region])
-    })
-    var i;
     boton1.click(function(){
-        for (i=0; i<16; i++){
-            var id_region=$("#"+"lista_info[i][1]")
-            id_region.css("opacity", "(lista.info[i][3])/10")
-        }
+        r1.css("fill", "hsl(6, 78%, 87%)")
+        r2.css("fill", "hsl(6, 78%, 84%)")
+        r3.css("fill", "hsl(6, 78%, 78%)")
+        r4.css("fill", "hsl(6, 78%, 65%)")
+        r5.css("fill", "hsl(6, 78%, 71%)")
+        r6.css("fill", "hsl(6, 78%, 49%)")
+        r7.css("fill", "hsl(6, 78%, 7%)")
+        r8.css("fill", "hsl(6, 78%, 13%)")
+        r9.css("fill", "hsl(6, 78%, 51%)")
+        r10.css("fill", "hsl(6, 78%, 46%)")
+        r11.css("fill", "hsl(6, 78%, 49%)")
+        r12.css("fill", "hsl(6, 78%, 39%)")
+        r13.css("fill", "hsl(6, 78%, 80%)")
+        r14.css("fill", "hsl(6, 78%, 73%)")
+        r15.css("fill", "hsl(6, 78%, 18%)")
+        r16.css("fill", "hsl(6, 78%, 70%)")
+
+        inicio3.show()
+
+        regiones.mouseenter(function(){
+            $(this).fadeTo("fast",0.5)
+            
+        });
+
+        regiones.mouseleave(function(){
+            $(this).fadeTo("fast",1)
+        });    
+
+        regiones.click(function(){
+            $(this).css("fill","white")
+        });
+
+        texto123.text("NNA en SENAME según NNA en Chile")
+
+        r1.click(function(){
+            $(".textoinicio3").text("Región de Aysén")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 831") 
+            $(".textoinicio33").text("% Según el total nacional: 0,86%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+    
+        r2.click(function(){
+            $(".textoinicio3").text("Región de Magallanes")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 1180") 
+            $(".textoinicio33").text("% Según el total nacional: 1,22%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r3.click(function(){
+            $(".textoinicio3").text("Región de Tarapacá")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 1945") 
+            $(".textoinicio33").text("% Según el total nacional: 2%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+    
+        r4.click(function(){
+            $(".textoinicio3").text("Región de Antofagasta")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 3442") 
+            $(".textoinicio33").text("% Según el total nacional: 3,55%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+    
+        r5.click(function(){
+            $(".textoinicio3").text("Región de Atacama")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 2794") 
+            $(".textoinicio33").text("% Según el total nacional: 2,88%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r6.click(function(){
+            $(".textoinicio3").text("Región de Coquimbo")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5308") 
+            $(".textoinicio33").text("% Según el total nacional: 5,47%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r7.click(function(){
+            $(".textoinicio3").text("Región Metropolitana de Santiago")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 31707") 
+            $(".textoinicio33").text("% Según el total nacional: 33,7%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r8.click(function(){
+            $(".textoinicio3").text("Región de Valparaíso")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 11422") 
+            $(".textoinicio33").text("% Según el total nacional: 11,8%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r9.click(function(){
+            $(".textoinicio3").text("Región de la Araucanía")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5112") 
+            $(".textoinicio33").text("% Según el total nacional: 5,27%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r10.click(function(){
+            $(".textoinicio3").text("Región del Libertador General Bernardo O'Higgins")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5600") 
+            $(".textoinicio33").text("% Según el total nacional: 5,77%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r11.click(function(){
+            $(".textoinicio3").text("Región de Los Lagos")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5310") 
+            $(".textoinicio33").text("% Según el total nacional: 5,47%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r12.click(function(){
+            $(".textoinicio3").text("Región del Maule")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 6448") 
+            $(".textoinicio33").text("% Según el total nacional: 6,64%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r13.click(function(){
+            $(".textoinicio3").text("Región de Arica y Parinacota ")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 1652") 
+            $(".textoinicio33").text("% Según el total nacional: 1,7%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r14.click(function(){
+            $(".textoinicio3").text("Región de Los Ríos")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 2491") 
+            $(".textoinicio33").text("% Según el total nacional: 2,57%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r15.click(function(){
+            $(".textoinicio3").text("Región del Bíobío")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 8966") 
+            $(".textoinicio33").text("% Según el total nacional: 9,24%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
+        r16.click(function(){
+            $(".textoinicio3").text("Región del Ñuble")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 2833") 
+            $(".textoinicio33").text("% Según el total nacional: 2,92%")
+            $(".textoinicio32").text("Total NNA en el SENAME: 97.040")
+    
+        });
     });
+
+    boton2.click(function(){
+        r1.css("fill", "hsl(6, 78%, 55%)")
+        r2.css("fill", "hsl(6, 78%, 55%)")
+        r3.css("fill", "hsl(6, 78%, 90%)")
+        r4.css("fill", "hsl(6, 78%, 87%)")
+        r5.css("fill", "hsl(6, 78%, 43%)")
+        r6.css("fill", "hsl(6, 78%, 67%)")
+        r7.css("fill", "hsl(6, 78%, 94%)")
+        r8.css("fill", "hsl(6, 78%, 67%)")
+        r9.css("fill", "hsl(6, 78%, 83%)")
+        r10.css("fill", "hsl(6, 78%, 74%)")
+        r11.css("fill", "hsl(6, 78%, 70%)")
+        r12.css("fill", "hsl(6, 78%, 73%)")
+        r13.css("fill", "hsl(6, 78%, 67%)")
+        r14.css("fill", "hsl(6, 78%, 65%)")
+        r15.css("fill", "hsl(6, 78%, 76%)")
+        r16.css("fill", "hsl(6, 78%, 72%)")
+
+        inicio3.show()
+
+        texto123.text("NNA en SENAME según NNA tota de la Región")
+
+        regiones.mouseenter(function(){
+            $(this).fadeTo("fast",0.5)
+            
+        });
+
+        regiones.mouseleave(function(){
+            $(this).fadeTo("fast",1)
+        });    
+
+        regiones.click(function(){
+            $(this).css("fill","white")
+        });
+
+        r1.click(function(){
+            $(".textoinicio3").text("Región de Aysén")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 831") 
+            $(".textoinicio32").text("NNA en la región: 29.254")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,84%")
+    
+        });
+    
+        r2.click(function(){
+            $(".textoinicio3").text("Región de Magallanes")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 1.180") 
+            $(".textoinicio32").text("NNA en la región: 41.487")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,85%")
+    
+        });
+        r3.click(function(){
+            $(".textoinicio3").text("Región de Tarapacá")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 1.945") 
+            $(".textoinicio32").text("NNA en la región: 108.475")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 1,8%")
+    
+        });
+    
+        r4.click(function(){
+            $(".textoinicio3").text("Región de Antofagasta")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 3.442") 
+            $(".textoinicio32").text("NNA en la región: 183.507")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 1,9%")
+    
+        });
+    
+        r5.click(function(){
+            $(".textoinicio3").text("Región de Atacama")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 2.794") 
+            $(".textoinicio32").text("NNA en la región: 87.102")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 3,2%")
+    
+        });
+        r6.click(function(){
+            $(".textoinicio3").text("Región de Coquimbo")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5.308") 
+            $(".textoinicio32").text("NNA en la región: 215.293")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,47%")
+    
+        });
+        r7.click(function(){
+            $(".textoinicio3").text("Región Metropolitana de Santiago")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 31.707") 
+            $(".textoinicio32").text("NNA en la región: 1.906.599")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 1,66%")
+    
+        });
+        r8.click(function(){
+            $(".textoinicio3").text("Región de Valparaíso")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 11.422") 
+            $(".textoinicio32").text("NNA en la región: 461.800")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,47%")
+    
+        });
+        r9.click(function(){
+            $(".textoinicio3").text("Región de la Araucanía")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5.112") 
+            $(".textoinicio32").text("NNA en la región: 257.493")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 1,99%")
+    
+        });
+        r10.click(function(){
+            $(".textoinicio3").text("Región del Libertador General Bernardo O'Higgins")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5.600") 
+            $(".textoinicio32").text("NNA en la región: 245.889")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,28%")
+    
+        });
+        r11.click(function(){
+            $(".textoinicio3").text("Región de Los Lagos")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 5.310") 
+            $(".textoinicio32").text("NNA en la región: 222.657")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,38%")
+    
+        });
+        r12.click(function(){
+            $(".textoinicio3").text("Región del Maule")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 6.448") 
+            $(".textoinicio32").text("NNA en la región: 280.234")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,3%")
+    
+        });
+        r13.click(function(){
+            $(".textoinicio3").text("Región de Arica y Parinacota ")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 1.652") 
+            $(".textoinicio32").text("NNA en la región: 66.846")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,47%")
+    
+        });
+        r14.click(function(){
+            $(".textoinicio3").text("Región de Los Ríos")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 2.491") 
+            $(".textoinicio32").text("NNA en la región: 98.552")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,53%")
+    
+        });
+        r15.click(function(){
+            $(".textoinicio3").text("Región del Bíobío")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 8.966") 
+            $(".textoinicio32").text("NNA en la región: 406.339")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,2%")
+    
+        });
+        r16.click(function(){
+            $(".textoinicio3").text("Región del Ñuble")
+            $(".textoinicio31").text("NNA en SENAME de la Región: 2.832") 
+            $(".textoinicio32").text("NNA en la región: 122.307")
+            $(".textoinicio33").text("% NNA en SENAME según NNA en región: 2,31%")
+    
+        });
+    });
+
+    boton3.click(function(){
+        r1.css("fill", "hsl(6, 78%, 97%)")
+        r2.css("fill", "hsl(6, 78%, 87%)")
+        r3.css("fill", "hsl(6, 78%, 82%)")
+        r4.css("fill", "hsl(6, 78%, 76%)")
+        r5.css("fill", "hsl(6, 78%, 79%)")
+        r6.css("fill", "hsl(6, 78%, 75%)")
+        r7.css("fill", "hsl(6, 78%, 6%)")
+        r8.css("fill", "hsl(6, 78%, 23%)")
+        r9.css("fill", "hsl(6, 78%, 79%)")
+        r10.css("fill", "hsl(6, 78%, 75%)")
+        r11.css("fill", "hsl(6, 78%, 57%)")
+        r12.css("fill", "hsl(6, 78%, 57%)")
+        r13.css("fill", "hsl(6, 78%, 87%)")
+        r14.css("fill", "hsl(6, 78%, 82%)")
+        r15.css("fill", "hsl(6, 78%, 47%)")
+        r16.css("fill", "hsl(6, 78%, 83%)")
+
+        inicio3.show()
+
+        texto123.text("N° Residencias en cada región según residencias totales en Chile")
+
+        regiones.mouseenter(function(){
+            $(this).fadeTo("fast",0.5)
+            
+        });
+
+        regiones.mouseleave(function(){
+            $(this).fadeTo("fast",1)
+        });    
+
+        regiones.click(function(){
+            $(this).css("fill","white")
+        });
+
+        r1.click(function(){
+            $(".textoinicio3").text("Región de Aysén")
+            $(".textoinicio31").text("Residencias: 20") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 0,55%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+    
+        r2.click(function(){
+            $(".textoinicio3").text("Región de Magallanes")
+            $(".textoinicio31").text("Residencias: 93") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 2,57%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r3.click(function(){
+            $(".textoinicio3").text("Región de Tarapacá")
+            $(".textoinicio31").text("Residencias: 130") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 3,6%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+    
+        r4.click(function(){
+            $(".textoinicio3").text("Región de Antofagasta")
+            $(".textoinicio31").text("Residencias: 169") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 4,67%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+    
+        r5.click(function(){
+            $(".textoinicio3").text("Región de Atacama")
+            $(".textoinicio31").text("Residencias: 145") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 4%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r6.click(function(){
+            $(".textoinicio3").text("Región de Coquimbo")
+            $(".textoinicio31").text("Residencias: 177") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 4,9%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r7.click(function(){
+            $(".textoinicio3").text("Región Metropolitana de Santiago")
+            $(".textoinicio31").text("Residencias: 673") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 18,6%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r8.click(function(){
+            $(".textoinicio3").text("Región de Valparaíso")
+            $(".textoinicio31").text("Residencias: 551") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 15,2%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r9.click(function(){
+            $(".textoinicio3").text("Región de la Araucanía")
+            $(".textoinicio31").text("Residencias: 149") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 4,12%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r10.click(function(){
+            $(".textoinicio3").text("Región del Libertador General Bernardo O'Higgins")
+            $(".textoinicio31").text("Residencias: 174") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 4,82%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r11.click(function(){
+            $(".textoinicio3").text("Región de Los Lagos")
+            $(".textoinicio31").text("Residencias: 307") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 8,49%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r12.click(function(){
+            $(".textoinicio3").text("Región del Maule")
+            $(".textoinicio31").text("Residencias: 310") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 8,57%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r13.click(function(){
+            $(".textoinicio3").text("Región de Arica y Parinacota ")
+            $(".textoinicio31").text("Residencias: 88") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 2,43%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r14.click(function(){
+            $(".textoinicio3").text("Región de Los Ríos")
+            $(".textoinicio31").text("Residencias: 130") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 3,6%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r15.click(function(){
+            $(".textoinicio3").text("Región del Bíobío")
+            $(".textoinicio31").text("Residencias: 379") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 10,5%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+        r16.click(function(){
+            $(".textoinicio3").text("Región del Ñuble")
+            $(".textoinicio31").text("Residencias: 120") 
+            $(".textoinicio33").text("% Residencias según el total nacional: 3,31%")
+            $(".textoinicio32").text("Total nacional residencias SENAME: 3.615" )
+    
+        });
+    });
+
+    var inicio3=$("#inicio3");
+
+    inicio3.hide()
 
     /*variables para los botones*/
     var Inicio=$("#Inicio");
@@ -103,7 +554,7 @@ $(document).ready(function(){
     var BotonInicio=$("#BotonInicio");
     var BotonCausalesDeIngreso=$("#BotonCausalesDeIngreso");
     var BotonDDHH=$("#BotonDDHH");
-    var BotonHistoria=$("#BotonHistoria");
+    // var BotonHistoria=$("#BotonHistoria");
     var BotonMundo=$("#BotonMundo");
     var subtab = $(".subtab")
 
@@ -126,9 +577,9 @@ $(document).ready(function(){
         DDHH.hide()
         Historia.hide()
         Mundo.hide()
-        $("#TituloSeccion").text("Inicio")
+        $("#TituloSeccion").text("inicio") 
 
-    })
+    });
 
     BotonCausalesDeIngreso.click(function(){
         Inicio.hide()
@@ -138,7 +589,7 @@ $(document).ready(function(){
         Mundo.hide()
         $("#TituloSeccion").text("Causales de Ingreso")
         
-    })
+    });
 
     BotonDDHH.click(function(){
         Inicio.hide()
@@ -147,16 +598,7 @@ $(document).ready(function(){
         Historia.hide()
         Mundo.hide()
         $("#TituloSeccion").text("Derechos Humanos")
-    })
-
-    BotonHistoria.click(function(){
-        Inicio.hide()
-        CausalesDeIngreso.hide()
-        DDHH.hide()
-        Historia.show()
-        Mundo.hide()
-        $("#TituloSeccion").text("Historia del Sename")
-    })
+    });
 
     BotonMundo.click(function(){
         Inicio.hide()
@@ -165,7 +607,7 @@ $(document).ready(function(){
         Historia.hide()
         Mundo.show()
         $("#TituloSeccion").text("Mundo")
-    })
+    });
 
     topbutton.hide();
     menu.click(function(){
@@ -226,124 +668,15 @@ $(document).ready(function(){
         $(".niñes").fadeTo("fast",1);
         $(".vic").fadeTo("fast",1);
     });
-    regiones.mouseenter(function(){
-        $(this).fadeTo("fast",0.5)
-        
-    });  
 
-    regiones.click(function(){
-        $(".regiones").css("fill","white")
-        $(this).css("fill","#e84145")
-        
             //$(this).css("background-color" ,"#e84145")
         //var region = $(this).attr("title")
         //$(".textoinicio3").text(region)
         
-    });
 
-    r1.click(function(){
-        $(".textoinicio3").text("Región de Aysén")
-        $(".textoinicio31").text("NNA: 831") 
-        $(".textoinicio32").text("Residencias: 20")
 
-    });
-
-    r2.click(function(){
-        $(".textoinicio3").text("Región de Magallanes")
-        $(".textoinicio31").text("NNA: 1180") 
-        $(".textoinicio32").text("Residencias: 93")
-
-    });
-    r3.click(function(){
-        $(".textoinicio3").text("Región de Tarapacá")
-        $(".textoinicio31").text("NNA: 1945") 
-        $(".textoinicio32").text("Residencias: 130")
-
-    });
-
-    r4.click(function(){
-        $(".textoinicio3").text("Región de Antofagasta")
-        $(".textoinicio31").text("NNA: 3442") 
-        $(".textoinicio32").text("Residencias: 169")
-
-    });
-
-    r5.click(function(){
-        $(".textoinicio3").text("Región de Atacama")
-        $(".textoinicio31").text("NNA: 2794") 
-        $(".textoinicio32").text("Residencias: 145")
-
-    });
-    r6.click(function(){
-        $(".textoinicio3").text("Región de Coquimbo")
-        $(".textoinicio31").text("NNA: 5308") 
-        $(".textoinicio32").text("Residencias: 177")
-
-    });
-    r7.click(function(){
-        $(".textoinicio3").text("Región Metropolitana de Santiago")
-        $(".textoinicio31").text("NNA: 31707") 
-        $(".textoinicio32").text("Residencias: 673")
-
-    });
-    r8.click(function(){
-        $(".textoinicio3").text("Región de Valparaíso")
-        $(".textoinicio31").text("NNA: 11422") 
-        $(".textoinicio32").text("Residencias: 551")
-
-    });
-    r9.click(function(){
-        $(".textoinicio3").text("Región de la Araucanía")
-        $(".textoinicio31").text("NNA: 5112") 
-        $(".textoinicio32").text("Residencias: 149")
-
-    });
-    r10.click(function(){
-        $(".textoinicio3").text("Región del Libertador General Bernardo O'Higgins")
-        $(".textoinicio31").text("NNA: 5600") 
-        $(".textoinicio32").text("Residencias: 174")
-
-    });
-    r11.click(function(){
-        $(".textoinicio3").text("Región de Los Lagos")
-        $(".textoinicio31").text("NNA: 5310") 
-        $(".textoinicio32").text("Residencias: 307")
-
-    });
-    r12.click(function(){
-        $(".textoinicio3").text("Región del Maule")
-        $(".textoinicio31").text("NNA: 6448") 
-        $(".textoinicio32").text("Residencias: 310")
-
-    });
-    r13.click(function(){
-        $(".textoinicio3").text("Región de Arica y Parinacota ")
-        $(".textoinicio31").text("NNA: 1652") 
-        $(".textoinicio32").text("Residencias: 88")
-
-    });
-    r14.click(function(){
-        $(".textoinicio3").text("Región de Los Ríos")
-        $(".textoinicio31").text("NNA: 2491") 
-        $(".textoinicio32").text("Residencias: 130")
-
-    });
-    r15.click(function(){
-        $(".textoinicio3").text("Región del Bíobío")
-        $(".textoinicio31").text("NNA: 8966") 
-        $(".textoinicio32").text("Residencias: 379")
-
-    });
-    r16.click(function(){
-        $(".textoinicio3").text("Región del Ñuble")
-        $(".textoinicio31").text("NNA: 2832") 
-        $(".textoinicio32").text("Residencias: 120")
-
-    });
     
-    regiones.mouseleave(function(){
-        $(this).fadeTo("fast",1)
-    });
+    
 
 
     //cosas DDHH
@@ -426,17 +759,11 @@ $(document).ready(function(){
 
     BotSig3.click(function(){
         Ok.hide();
-        Historia.show();
-        $("#TituloSeccion").text("Historia del Sename")
-
-    });
-
-    BotSig4.click(function(){
-        Ok.hide(); 
         Mundo.show();
         $("#TituloSeccion").text("Mundo")
-            
+
     });
+
 
     BotSig5.click(function(){
         Ok.hide();
