@@ -11,16 +11,6 @@ $(document).ready(function(){
     var n8 = $("#n8");
     var n9 = $("#n9");
     var n10 = $("#n10");
-    var n11 = $("#n11");
-    var n12 = $("#n12");
-    var n13 = $("#n13");
-    var n14 = $("#n14");
-    var n15 = $("#n15");
-    var n16 = $("#n16");
-    var n17 = $("#n17");
-    var n18 = $("#n18");
-    var n19 = $("#n19");
-    var n20 = $("#n20");
     var tci = $("#tituloci");
     var eci = $("#explicacionci");
     var regiones = $(".regiones");
@@ -637,36 +627,7 @@ $(document).ready(function(){
     
 
       
-    niñes.mouseenter(function(){
-        if (niñesoff==true) {
-            $(this).fadeTo("fast",0.5);
-        }   
-    });
     
-    niñes.mouseleave(function(){
-        if (niñesoff==true) {
-            $(this).fadeTo("fast",1);}
-
-    });
-    niñes.click(function(){
-        if (niñesoff==true){
-            niñesoff=false;
-        }
-        $("#x").fadeTo("fast",1);
-        $(".niñes").fadeTo("fast",0.05);
-        $(".vic").fadeTo("fast",0.05);
-
-    });
-    n1.click(function(){ 
-        
-        $("#tituloci").text("VICTIMA DE MALTRATO FISICO")
-        $("#tituloci").fadeTo("fast",1)
-        $("#explicacionci").fadeTo("fast",1)
-        $("#explicacionci").text("Refiere a una situación en que un niño, niña o adolescente ha sufrido, ocasional o habitualmente, agresiones físicas, por parte de los padres, cuidadores, otros adultos o instituciones. Puede o no tener como resultado una lesión física o la generación de enfermedades")
-        $(".niñes").fadeTo("fast",0.05);
-        $(".vic").fadeTo("fast",0.05);
-        
-    });
     x.click(function(){ 
         if (niñesoff==false){
             niñesoff=true;
@@ -782,6 +743,47 @@ $(document).ready(function(){
     });
     //fin cosas Ari
 
+    //inicio cosas Mai
+    n10.mouseenter(function(){
+        if (niñesoff==true) {
+            $(this).fadeTo("fast",0.5);
+        }   
+    });
+    n10.mouseleave(function(){
+        if (niñesoff==true) {
+            $(this).fadeTo("fast",1);}
+
+    });
+    niñes.mouseenter(function(){
+        if (niñesoff==true) {
+            $(this).fadeTo("fast",0.5);
+        }   
+    });
+    
+    niñes.mouseleave(function(){
+        if (niñesoff==true) {
+            $(this).fadeTo("fast",1);}
+
+    });
+    niñes.click(function(){
+        if (niñesoff==true){
+            niñesoff=false;
+        }
+        $("#x").fadeTo("fast",1);
+        $(".niñes").fadeTo("fast",0.05);
+        $(".vic").fadeTo("fast",0.05);
+
+    });
+    n1.click(function(){ 
+        
+        $("#tituloci").text("VICTIMA DE MALTRATO FISICO")
+        $("#tituloci").fadeTo("fast",1)
+        $("#explicacionci").fadeTo("fast",1)
+        $("#explicacionci").text("Refiere a una situación en que un niño, niña o adolescente ha sufrido, ocasional o habitualmente, agresiones físicas, por parte de los padres, cuidadores, otros adultos o instituciones. Puede o no tener como resultado una lesión física o la generación de enfermedades")
+        $(".niñes").fadeTo("fast",0.05);
+        $(".vic").fadeTo("fast",0.05);
+        
+    });
     n2.click(function(){ 
         $("#tituloci").text("VICTIMA DE MALTRATO PSICOLÓGICO");
         $("#tituloci").fadeTo("fast",1);
@@ -846,6 +848,7 @@ $(document).ready(function(){
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
     });
+    
     n10.click(function(){ 
         $("#tituloci").text("Víctima de maltrato prenatal");
         $("#tituloci").fadeTo("fast",1);
@@ -854,86 +857,7 @@ $(document).ready(function(){
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
     });
-    n11.click(function(){ 
-        $("#tituloci").text("Transgresión de derechos a personas o propiedad");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Transgresión de derechos a personas o propiedad");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n12.click(function(){ 
-        $("#tituloci").text("Protección según orden de Tribunal");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso Protección según orden de Tribunal");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n13.click(function(){ 
-        $("#tituloci").text("Víctima de negligencia");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso Víctima de negligencia");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });    
-    n14.click(function(){ 
-        $("#tituloci").text("Víctimas de explotación sexual");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Víctimas de explotación sexual");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n15.click(function(){ 
-        $("#tituloci").text("Cesión en adopción");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Cesión en adopción");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n16.click(function(){ 
-        $("#tituloci").text("Bullying, matonaje o intimidación escolar");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Bullying, matonaje o intimidación escolar");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n17.click(function(){ 
-        $("#tituloci").text("NNA con prácticas sexuales abusivas hacia otro NNA");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de NNA con prácticas sexuales abusivas hacia otro NNA");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n18.click(function(){ 
-        $("#tituloci").text("Víctima de vulneración y/o delitos contra la indemnidad sexual");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Víctima de vulneración y/o delitos contra la indemnidad sexual");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n19.click(function(){ 
-        $("#tituloci").text("Fuera del sistema escolar");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Fuera del sistema escolar");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
-    n20.click(function(){ 
-        $("#tituloci").text("Víctima de Peores Formas de Trabajo Infantil");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Prácticas sexuales abusivas hacia otros menores de edad");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-    });
+    
 
 /* MAPAS MATI NO TOCAR PLS */
     
@@ -953,8 +877,8 @@ $(document).ready(function(){
         EstadosUnidos.css("fill","#096cb5")
         pais.text("Estados Unidos")
         pais_desc_1.text("En Estados Unidos existe el sistema Foster Care o de casas de acogida. Los niños con un transfondo crítico son enviados a familias capacitadas durante un tiempo determinado. Sólo el 10% de los NNA está en una residencia permanente como el Sename.")
-        pais_desc_2.text("Xd")
-        pais_desc_3.text("Djdjdjd")
+        pais_desc_2.text("Los sistemas de Foster Care son dirigidos por ONGs, sólamente subvencionados por el Estado.")
+        pais_desc_3.text("Dependiendo del caso, los infractores juveniles (desde los 15 años) pueden ser tratados como adultos, pudiendo ser enviados incluso a la carcel. En la mayoría de los casos, son enviados a centros de detención juvenil.")
     });
     
     EstadosUnidos.mouseleave(function(){
@@ -978,8 +902,8 @@ $(document).ready(function(){
         Mexico.css("fill","#096cb5")
         pais.text("Mexico")
         pais_desc_1.text("Uwu")
-        pais_desc_2.text("Xd")
-        pais_desc_3.text("Djdjdjd")
+        pais_desc_2.text("Instituciones públicas y privadas. Los orfanatos pueden ser públicos, privados, subsidiados o financiados por caridad.")
+        pais_desc_3.text("Existe un sistema donde se internan a los adolescentes (de 12 a 17 años) que hayasen cometido una falta grave.")
     });
 
     Mexico.mouseleave(function(){
@@ -989,9 +913,9 @@ $(document).ready(function(){
     Colombia.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Colombia.css("fill","#096cb5")
         pais.text("Colombia")
-        pais_desc_1.text("Uwu")
+        pais_desc_1.text("En el país existen las casas de acogida. Sin embargo, hay muchos niñes y jóvenes que aún van a internados y residencias.")
         pais_desc_2.text("Xd")
-        pais_desc_3.text("Djdjdjd")
+        pais_desc_3.text("Existe el Sistema Penal para Adolescentes y los Centros de Atención Especializada.")
     });
 
     Colombia.mouseleave(function(){
@@ -1001,9 +925,9 @@ $(document).ready(function(){
     Germany.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Germany.css("fill","#096cb5")
         pais.text("Alemania")
-        pais_desc_1.text("Uwu")
-        pais_desc_2.text("Xd")
-        pais_desc_3.text("Djdjdjd")
+        pais_desc_1.text("Para situaciones críticas los niñes y jóvenes son enviados a casas de acogida. Sin embargo, a les adolescentes se les envía muchas veces a residencias comunes.")
+        pais_desc_2.text("")
+        pais_desc_3.text("Existen cárceles para jóvenes. Sin embargo, están enfocadas en la rehabilitación y reinserción de los jpo")
     });
 
     Germany.mouseleave(function(){
