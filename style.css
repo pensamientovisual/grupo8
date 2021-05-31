@@ -348,22 +348,33 @@ button {
 
 #NinosSuperior{
     display:flex;
+    justify-content: space-evenly;
 }
 
 #NinosInferior{
     display:flex;
+    justify-content: space-evenly;
+    
 }
 
 .niñes {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    
+    display: block;
+    margin: auto;
     width: 70px;
     padding: 20px 10px 0px;
-    margin: 0px 15px;
+    
+    
+}
+#n16 {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    width: 600px;
+    
 }
 
-.vic {
+/*.vic {
     display: inline-table;
     text-decoration: none;
     right: -20px;
@@ -375,7 +386,7 @@ button {
     padding: 10px 10px;
     margin: 0px 17px;
     text-align: center;
-}
+}*/
 .regiones{
     fill: white;
 }
@@ -385,8 +396,6 @@ button {
     height: 450px;
 }
 #textboxmundo{
-    border: solid;
-    border-color: white;
     padding:10px;
     margin:20px;
     width: 300px
@@ -394,6 +403,23 @@ button {
 
 .worldmap{
     color: beige;
+}
+
+
+#pais {
+font-size: 20px;
+}
+
+#pais_desc_1 {
+font-size: 15px;
+}
+
+#pais_desc_2 {
+font-size: 15px;
+}
+
+#pais_desc_3{
+font-size: 15px;
 }
 
 /*DDHH */
@@ -489,6 +515,23 @@ button {
 .United_States{
     fill:#ececec;
 }
+
+.Germany{
+    fill:#ececec;
+}
+
+.Colombia{
+    fill:#ececec;
+}
+
+.Argentina{
+    fill:#ececec;
+}
+
+.Mexico{
+    fill:#ececec;
+}
+
 
 /* FIN DE LOS PAISES DE MATI */
 

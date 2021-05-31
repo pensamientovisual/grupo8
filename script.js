@@ -51,9 +51,18 @@ $(document).ready(function(){
     /*Mati*/
     var Canada=$(".Canada");
     var Chile2=$(".Chile2");
-    var pais=$("#pais");
-    var pais_desc=$("#pais_desc");
     var EstadosUnidos = $(".United_States");
+    var Argentina = $(".Argentina")
+    var Mexico = $(".Mexico")
+    var Colombia = $(".Colombia")
+    var Germany = $(".Germany")
+
+
+
+    var pais=$("#pais");
+    var pais_desc_1=$("#pais_desc_1");
+    var pais_desc_2=$("#pais_desc_2");
+    var pais_desc_3=$("#pais_desc_3");
 
     /*ARI*/
     var ds=$("#DerechoALaSalud");
@@ -931,7 +940,9 @@ $(document).ready(function(){
     Canada.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Canada.css("fill","#096cb5")
         pais.text("Canada")
-        pais_desc.text("En Canada........")
+        pais_desc_1.text("Uwu")
+        pais_desc_2.text("Xd")
+        pais_desc_3.text("Djdjdjd")
     });
 
     Canada.mouseleave(function(){
@@ -941,7 +952,9 @@ $(document).ready(function(){
     EstadosUnidos.mouseenter(function(){ /* Se podrá poner una función no más?*/
         EstadosUnidos.css("fill","#096cb5")
         pais.text("Estados Unidos")
-        pais_desc.text("Existe un sistema de servicios protección infantil (CPS, children protection services). Para los casos de negligencia infantil o similares, los niños pueden ser relocalizados con parientes cercanos (kinship services), o en el sistema de orfanato conocido como Foster Homes. El objetivo de este servicio es que una familia entrenada se haga responsable de un infante durante al menos dos años, mientras a la familia original se le hagan capacitaciones. Cada año se evalúa el retorno de los niños a su familia original, y en promedio, los niños pasan 2 años en una Foster Home.")
+        pais_desc_1.text("En Estados Unidos existe el sistema Foster Care o de casas de acogida. Los niños con un transfondo crítico son enviados a familias capacitadas durante un tiempo determinado. Sólo el 10% de los NNA está en una residencia permanente como el Sename.")
+        pais_desc_2.text("Xd")
+        pais_desc_3.text("Djdjdjd")
     });
     
     EstadosUnidos.mouseleave(function(){
@@ -951,7 +964,9 @@ $(document).ready(function(){
     Chile2.mouseenter(function(){
         Chile2.css("fill","#096cb5")
         pais.text("Chile")
-        pais_desc.text("En Chile está el sename, una institución cuestionada, etc.")
+        pais_desc_1.text("Uwu")
+        pais_desc_2.text("Xd")
+        pais_desc_3.text("Djdjdjd")
     });  
     
     Chile2.mouseleave(function(){
@@ -959,5 +974,52 @@ $(document).ready(function(){
         
     });
 
+    Mexico.mouseenter(function(){ /* Se podrá poner una función no más?*/
+        Mexico.css("fill","#096cb5")
+        pais.text("Mexico")
+        pais_desc_1.text("Uwu")
+        pais_desc_2.text("Xd")
+        pais_desc_3.text("Djdjdjd")
+    });
+
+    Mexico.mouseleave(function(){
+        Mexico.css("fill","#ececec")
+    });
+
+    Colombia.mouseenter(function(){ /* Se podrá poner una función no más?*/
+        Colombia.css("fill","#096cb5")
+        pais.text("Colombia")
+        pais_desc_1.text("Uwu")
+        pais_desc_2.text("Xd")
+        pais_desc_3.text("Djdjdjd")
+    });
+
+    Colombia.mouseleave(function(){
+        Colombia.css("fill","#ececec")
+    });
+
+    Germany.mouseenter(function(){ /* Se podrá poner una función no más?*/
+        Germany.css("fill","#096cb5")
+        pais.text("Alemania")
+        pais_desc_1.text("Uwu")
+        pais_desc_2.text("Xd")
+        pais_desc_3.text("Djdjdjd")
+    });
+
+    Germany.mouseleave(function(){
+        Germany.css("fill","#ececec")
+    });
+
+    Argentina.mouseenter(function(){ /* Se podrá poner una función no más?*/
+        Argentina.css("fill","#096cb5")
+        pais.text("Argentina")
+        pais_desc_1.text("Uwu")
+        pais_desc_2.text("Xd")
+        pais_desc_3.text("Djdjdjd")
+    });
+
+    Argentina.mouseleave(function(){
+        Argentina.css("fill","#ececec")
+    });
 
 });
