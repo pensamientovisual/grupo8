@@ -88,7 +88,38 @@ $(document).ready(function(){
     var menu = $("#menu");
     var TituloSeccion=$("#TituloSeccion");
 
-    var texto123=$("#textoinicioregiones")
+    var texto123=$("#textoinicioregiones");
+
+    var bar111=$("#bar111");
+    var bar112=$("#bar112");
+    var bar113=$("#bar113");
+    var bar101 =$("#bar101");
+    var bar102= $("#bar102");
+    var bar103= $("#bar103");
+    var bar221=$("#bar221");
+    var bar222= $("#bar222");
+    var bar223=$("#bar223");
+    var bar201=$("#bar201");
+    var bar202=$("#bar202");
+    var bar203=$("#bar203");
+    var bar331=$("#bar331");
+    var bar301=$("#bar301");
+    var bar332=$("#bar332");
+    var bar302=$("#bar302");
+    var bar333=$("#bar333");
+    var bar303=$("#bar303");
+    var bar441=$("#bar441");
+    var bar401=$("#bar401");
+    var bar402=$("#bar402");
+    var bar442=$("#bar422");
+    var bar403=$("#bar403");
+    var bar443=$("#bar443");
+    var bar551=$("#bar551");
+    var bar501=$("#bar501");
+    var bar552=$("#bar552");
+    var bar502=$("#bar502");
+    var bar553=$("#bar553");
+    var bar503=$("#bar503");
 
     botoneschile.mouseenter(function(){
         $(this).fadeTo("fast",0.5)
@@ -646,7 +677,7 @@ $(document).ready(function(){
     });   
 
     topbutton.mouseleave(function(){
-        $(this).css("background-color"," #096cb5")
+        $(this).css("biackground-color"," #096cb5")
     });
     
     CausalesDeIngreso.hide()
@@ -751,73 +782,238 @@ $(document).ready(function(){
     
 
     de.click(function(){
-        $("#Porcentaje").text("20%");
+        $(".#imgDDHH").hide()
+
+        $("#Porcentaje").text(" ")
         $("#titderecho").text("Derecho a la Educación") ;
         $("#Derecho1").text("Aprender todo aquello que desarrolle al máximo su personalidad y capacidades intelectuales, físicas y sociales.");
         $("#Derecho3").text("Todos los niños deberían tener acceso a la enseñanza secundaria.");
         $("#Derecho4").text(" ");
-        
-        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este  consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.");
-        
-        $("#Dato2").text("Situación en la que un NNA no alcanza los objetivos curriculares, atrasándose en su progresión académica, ya sea por semestres o años. Esto se puede deber a factores tanto personales como relacionados al ambiente que rodea al NNA. La prevalencia del retraso escolar es significativamente mayor dentro del sename en comparación con la población de NNA total en Chile, con dichos porcentajes siento 48% y 11% respectivamente.");
-        
-        $("#Dato3").text("Se define a la deserción escolar como el abandono parcial o total del centro escolar y de los estudios por parte del NNA, sea esta educación básica o media. Para la totalidad de lxs NNA en Chile, se tiene puede notar un 3% de deserción escolar, comparado con el 36% presente en NNA integrados en la red SENAME.");
+        $("#Dato1").text(" ");
+        $("#Dato2").text("Dato 2");
+        $("#Dato3").text("Dato 3");
+    
+
         $(".graficos").hide()
         $("#g1").show()
     });
 
     dvf.click(function(){
-        $("#Porcentaje").text("32%")
+        $("#Porcentaje").text(" ")
         $("#titderecho").text("Derecho a Vivir en Familia") 
         $("#Derecho1").text("La vida, el desarrollo, la participación y la protección.");
         $("#Derecho2").text("Tener un nombre y una nacionalidad.");
         $("#Derecho3").text("Saber quiénes son sus papás y a no ser separados de ellos.");
         $("#Derecho4").text("Que el Estado garantice a sus padres la posibilidad de cumplir con sus deberes y derechos.");
-        $("#Dato1").text("El abandono de NNA se produce cuando un padre, tutor o persona a cargo de un NNA lx abandona sin consideración alguna por su salud física, seguridad o bienestar y con la intención de dejarlo por completo; en algunos casos, también ocurre cuando no se brinda la atención necesaria a un NNA que vive bajo el mismo techo. Si bien este abandono generalmente implica el abandono físico, también puede incluir casos extremos de abandono emocional. Una persona acusada de abandono de NNA puede enfrentar penas de delito grave o menor y otras consecuencias, mientras que lxs menores en cuestión son derivadxs al sistema de cuidado alternativo (ya sea una residencia o una familia de acogida).");
-        $("#Dato2").text("La susceptibilidad de adopción se declara mediante un juicio, el cual consta de la acreditación de una o más de las causales legales establecidas en el artículo 12 de la Ley N° 19.620 que derivan en que un NNA no pueda continuar conviviendo con su familia de origen. En estos casos, el NNA es separadx de su medio familiar por orden judicial, e ingresa al sistema de cuidado alternativo (ya sea una residencia o una familia de acogida). Este procedimiento de susceptibilidad de adopción también podrá iniciarse antes del nacimiento, debiendo ser patrocinado sólo por el Sename o por un organismo acreditado. Para el gobierno de Chile, se tiene como meta que la institucionalización sea siempre una medida transitoria, a objeto de frenar la situación de vulneración de derechos a la que se ha estado expuesto, otorgándole al lxs NNA un espacio de protección");
-        $("#Dato3").text("Lxs NNA que pueden ser adoptados, en general han vivenciado experiencias muy dolorosas de separaciones tempranas, graves vulneraciones de derechos y prolongados períodos de institucionalización que han dejado huellas en su desarrollo integral, emocional y vincular. Esta realidad complejiza aún más los desafíos que deben enfrentar los futuros padres/madres. En este sentido, cobra gran relevancia al momento de decidir su integración a una familia a través de la adopción factores tales como: su edad, condición de salud, el tiempo de vida transcurrido en el sistema de cuidado alternativo y si es parte de un grupo de hermanos. En su gran mayoría, las dificultades señaladas pueden ser superadas en el contexto familiar y/o con asesoría de Especialistas.");
+        $("#Dato1").text(" ");
+        $("#Dato2").text("Dato 2");
+        $("#Dato3").text("Dato 3");
         $(".graficos").hide()
         $("#g2").show()
     });
     dt.click(function(){
-        $("#Porcentaje").text("43%");
+        $("#Porcentaje").text(" ");
         $("#titderecho").text("Derecho a Recibir Tratamiento") ;
         $("#Derecho1").text("Los niños impedidos tienen derecho a los servicios de rehabilitación, y a la educación y capacitación que los ayuden a disfrutar de una vida plena y decorosa.");
         $("#Derecho2").text("El derecho de un trato especial en caso de privación de la libertad.");
         $("#Derecho3").text(" ");
         $("#Derecho4").text(" ");
-        $("#Dato1").text("Uno de los derechos recogidos en la Declaración Universal de los Derechos Humanos, es el derecho de lxs NNA a recibir cuidados especiales. Todxs lxs NNA tienen derecho a recibir cuidados especiales, tratamiento y educación especiales, cuando su condición y situación particular lo requiera. Al considerar los casi 100,000 NNA ingresados en la red SENAME en Chile, cabe destacar que el 55% de estos presenta problemas de salud mental y el 3% no está recibiendo ningún tipo de tratamiento.");
-        $("#Dato2").text("Uno de los derechos recogidos en la Declaración Universal de los Derechos Humanos, es el derecho de lxs NNA a recibir cuidados especiales. Todxs lxs NNA tienen derecho a recibir cuidados especiales, tratamiento y educación especiales, cuando su condición y situación particular lo requiera. En este caso, se identifica un 2% de NNA institucionalizadxs que presentan enfermedades crónicas y no están recibiendo un tratamiento adecuado.");
-        $("#Dato3").text("Uno de los derechos recogidos en la Declaración Universal de los Derechos Humanos, es el derecho de lxs NNA a recibir cuidados especiales. Todxs lxs NNA tienen derecho a recibir cuidados especiales, tratamiento y educación especiales, cuando su condición y situación particular lo requiera. En este caso, se identifica un 5% de NNA institucionalizadxs que presentan algún tipo de discapacidad y no están recibiendo un tratamiento adecuado.");
+        $("#Dato1").text(" ");
+        $("#Dato2").text("Dato 2");
+        $("#Dato3").text("Dato 3");
         $(".graficos").hide()
         $("#g3").show()
     });
     di.click(function(){
-        $("#Porcentaje").text("54%");
+        $("#Porcentaje").text(" ");
         $("#titderecho").text("Derecho a la protección contra el abuso y la discriminación.") ;
         $("#Derecho1").text("No ser discriminados por el solo hecho de ser diferentes a los demás.");
         $("#Derecho2").text("Tener a quien recurrir en caso de que los maltraten o les hagan daño.");
         $("#Derecho3").text("Que no se les obligue a realizar trabajos peligrosos ni actividades que afecten o entorpezcan su salud, educación y desarrollo.");
         $("#Derecho4").text(" ");
-        $("#Dato1").text("Frecuentemente, en las historias clínicas de lxs NNA con conductas agresivas sexuales, es posible identificar factores familiares y ambientales entre los cuales se encuentran: El maltrato y la violencia en el hogar, las prácticas deficientes de crianza, la negligencia, exposición a los medios de comunicación sexualmente explícitos y vivir en ambientes altamente sexualizados. Entre los rasgos de personalidad identificados como factores de riesgo de conducta abusivas sexuales se incluyen: Impopularidad entre sus pares, hostilidad, agresividad, baja autoestima y creencias sexuales inadecuadas/incorrectas. Los programas centrados en la protección individual implementados deneve la incorporación de familias y personas en situación de extrema pobreza a las redes sociales, así como su acceso a mejores condiciones de vida. Se trata de servicios especializados de apoyo psicosocial, que mediante metodologías socioeducativas específicas, efectúa itinerarios de acompañamiento que facilitan la transición de familias y personas hacia otros procesos de integración social. Para el caso de algunxs menores dentro del SENAME, se tiene el Programa Abriendo Caminos, el cual es parte de Chile Solidario y se dirige a apoyar a NNA de familias donde hay situaciones de separación forzosa en razón del cumplimiento de condena de alguno de sus integtro de las residencias del SENAME tienen como base la idea que, equipando a las posibles víctimas con insumos conceptuales y conductuales respecto de cómo reconocer situaciones potencialmente riesgosas, y entregando estrategias de resistencia física y verbal a los intentos de los agresores, se puede disminuir las tasas de agresiones sexuales efectivas.");
-        $("#Dato2").text("El sistema Chile Solidario promurantes.");
-        $("#Dato3").text("El Registro Social de Hogares (antes, ficha de protección social) es un sistema de información cuyo fin es apoyar los procesos de selección de beneficiarios de un conjunto amplio de subsidios y programas sociales. El Registro es construido con datos aportados por el hogar y bases administrativas que posee el Estado, proveniente de diversas instituciones. Para la solicitud de ingreso al RSH de menores de 18 años institucionalizadxs que se encuentran bajo cuidado alternativo residencial por una medida judicial de protección, la gestión la realiza cualquier funcionarix de la institución, quien será además informante de dicho registro. La resolución judicial es obligatoria.");
+        $("#Dato1").text(" ");
+        $("#Dato2").text("Dato 2");
+        $("#Dato3").text("Dato 3");
         $(".graficos").hide()
         $("#g4").show()
     });
     ds.click(function(){
-        $("#Porcentaje").text("65%");
+        $("#Porcentaje").text(" ");
         $("#titderecho").text("Derecho a una vida Segura y Sana") ;
         $("#Derecho1").text("Tener una vida digna y plena, más aún si se tiene una discapacidad física o mental.");
         $("#Derecho2").text("Crecer sanos física, mental y espiritualmente.");
         $("#Derecho3").text("Descansar, jugar y practicar deportes.");
         $("#Derecho4").text("Vivir en un medio ambiente sano y limpio y a disfrutar del contacto con la naturaleza.");
-        $("#Dato1").text("Se puede definir la historia médica como un documento legal de la rama clínica que surge del contacto entre un paciente y un profesional de la salud, donde se recoge toda la información relevante acerca de la salud del paciente, de modo que se le pueda ofrecer una atención correcta y personalizada. Entre sus funciones, se encuentra la posibilidad de que el médico ofrezca una asistencia personalizada al paciente, aprender y mejorar los aciertos y errores en tratamientos pasados, investigar algunas ramas científicas a partir de la información contenida en el documento, mejorar la calidad de la salud de un paciente, gestionar y administrar los servicios médicos de las instituciones sanitarias, etc.");
-        $("#Dato2").text("Este 42% se compara con el porcentaje total de NNA consumidores de alcohol y drogas en Chile, el cual tiene un valor de 31%. Sin embargo, en la cifra representativa de consumo en NNA ingresados en la red SENAME entregada por el gobierno no se contabiliza a los menores de 18 años que se encuentran en conflicto con la justicia, es decir, que estén involucrados en algún proceso penal. Al considerar estos NNA adicionales, la cifra alcanza un 53%. Las drogas con mayor índice de consumo por integrantes de estas residencias son el alcohol, la marihuana, la pasta base y la cocaína.");
-        $("#Dato3").text("A nivel mundial se estima que entre el 10 y el 20% de los adolescentes experimentan problemas de salud mental. En Chile, se estima que un 38% de NNA presentan algún tipo de problemas de salud mental y/o trastornos mentales. Para la Organización Mundial de la Salud (OMS), los trastornos psiquiátricos que se inician en la infancia o en la adolescencia deben ser una prioridad para la salud pública. Los factores que determinan la salud mental de los y las adolescentes son múltiples, existiendo una correlación directa entre la exposición a factores de riesgo y los efectos provocados en la salud mental. Es posible estimar que un 55% de lxs NNA ingresadxs dentro de la red SENAME presentan algún tipo de problemas de salud mental y/o trastornos mentales.");
+        $("#Dato1").text(" ");
+        $("#Dato2").text("Dato 2");
+        $("#Dato3").text("Dato 3");
         $(".graficos").hide()
         $("#g5").show()
     });
+
+    //Botonoes gráficos
+
+    bar111.mouseenter(function(){
+        $("#Porcentaje").text("4%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar101.mouseenter(function(){
+        $("#Porcentaje").text("4%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar112.mouseenter(function(){
+        $("#Porcentaje").text("36%")
+        $("#Dato1").text("Situación en la que un NNA no alcanza los objetivos curriculares, atrasándose en su progresión académica, ya sea por semestres o años. Esto se puede deber a factores tanto personales como ambientales. La prevalencia del retraso escolar es significativamente mayor dentro del sename en comparación con la población de NNA total en Chile, con dichos porcentajes siento 48% y 11% respectivamente.")
+    });
+
+    bar102.mouseenter(function(){
+        $("#Porcentaje").text("36%")
+        $("#Dato1").text("Situación en la que un NNA no alcanza los objetivos curriculares, atrasándose en su progresión académica, ya sea por semestres o años. Esto se puede deber a factores tanto personales como ambientales. La prevalencia del retraso escolar es significativamente mayor dentro del sename en comparación con la población de NNA total en Chile, con dichos porcentajes siento 48% y 11% respectivamente.")
+    });
+    
+    bar113.mouseenter(function(){
+        $("#Porcentaje").text("48%")
+        $("#Dato1").text("Se define a la deserción escolar como el abandono parcial o total del centro escolar y de los estudios por parte del NNA, sea esta educación básica o media. Para la totalidad de lxs NNA en Chile, se tiene puede notar un 3% de deserción escolar, comparado con el 36% presente en NNA integrados en la red SENAME.")
+    });
+    
+    bar103.mouseenter(function(){
+        $("#Porcentaje").text("48%")
+        $("#Dato1").text("Se define a la deserción escolar como el abandono parcial o total del centro escolar y de los estudios por parte del NNA, sea esta educación básica o media. Para la totalidad de lxs NNA en Chile, se tiene puede notar un 3% de deserción escolar, comparado con el 36% presente en NNA integrados en la red SENAME.")
+    });
+
+    bar221.mouseenter(function(){
+        $("#Porcentaje").text("21%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar201.mouseenter(function(){
+        $("#Porcentaje").text("21%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar222.mouseenter(function(){
+        $("#Porcentaje").text("6%")
+        $("#Dato1").text("texto retraso escolar")
+    });
+
+    bar202.mouseenter(function(){
+        $("#Porcentaje").text("6%")
+        $("#Dato1").text("texto retraso escolar")
+    });
+    
+    bar223.mouseenter(function(){
+        $("#Porcentaje").text("5%")
+        $("#Dato1").text("texto retraso escolar")
+    });
+    
+    bar203.mouseenter(function(){
+        $("#Porcentaje").text("5%")
+        $("#Dato1").text("texto desercion escolar")
+    });
+
+    bar331.mouseenter(function(){
+        $("#Porcentaje").text("3%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+    
+    bar301.mouseenter(function(){
+        $("#Porcentaje").text("3%")
+        $("#Dato1").text("texto retraso escolar")
+    });
+    
+    bar332.mouseenter(function(){
+        $("#Porcentaje").text("2%")
+        $("#Dato1").text("texto desercion escolar")
+    });
+     
+     bar302.mouseenter(function(){
+        $("#Porcentaje").text("2%")
+        $("#Dato1").text("texto desercion escolar")
+    }); 
+
+    bar333.mouseenter(function(){
+        $("#Porcentaje").text("5%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    }); 
+
+    bar303.mouseenter(function(){
+        $("#Porcentaje").text("5%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar441.mouseenter(function(){
+        $("#Porcentaje").text("6%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar401.mouseenter(function(){
+        $("#Porcentaje").text("6%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar442.mouseenter(function(){
+        $("#Porcentaje").text("79%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar402.mouseenter(function(){
+        $("#Porcentaje").text("79%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });  
+
+    bar443.mouseenter(function(){
+        $("#Porcentaje").text("57%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar403.mouseenter(function(){
+        $("#Porcentaje").text("57%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    }); 
+
+    bar551.mouseenter(function(){
+        $("#Porcentaje").text("34%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar501.mouseenter(function(){
+        $("#Porcentaje").text("34%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar552.mouseenter(function(){
+        $("#Porcentaje").text("42%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar502.mouseenter(function(){
+        $("#Porcentaje").text("42%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar553.mouseenter(function(){
+        $("#Porcentaje").text("55%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar503.mouseenter(function(){
+        $("#Porcentaje").text("55%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    }); 
+
     //Botones siguientes
     var BotSigs = $(".BotSigs")
     BotSigs.mouseenter(function(){

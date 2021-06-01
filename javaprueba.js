@@ -48,6 +48,7 @@ var acc = document.getElementsByClassName("accordion");
         $(".Dato1").text("pim pam") 
         $(".Grafico").text("graficazo")
         $("Dato2").text("wen dato")
+        $(".imgDDHH").hide()
     });
 
     $("DerechoAVivirEnFamilia").click(function(){
@@ -96,3 +97,52 @@ var acc = document.getElementsByClassName("accordion");
     $("#stop").click(function(){
       $("#panel").stop();
     });
+
+
+    /*  bar302.mouseenter(function(){
+        $("#Porcentaje").text("8%")
+        $("#Dato1").text("texto desercion escolar")
+    }); 
+
+    bar333.mouseenter(function(){
+        $("#Porcentaje").text("4%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    }); 
+
+    bar303.mouseenter(function(){
+        $("#Porcentaje").text("5%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar441.mouseenter(function(){
+        $("#Porcentaje").text("6%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar401.mouseenter(function(){
+        $("#Porcentaje").text("7%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar442.mouseenter(function(){
+        $("#Porcentaje").text("8%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+    });
+
+    bar402.mouseenter(function(){
+        $("#Porcentaje").text("9%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });  
+
+    bar443.mouseenter(function(){
+        $("#Porcentaje").text("10%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    });
+
+    bar403.mouseenter(function(){
+        $("#Porcentaje").text("11%")
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.")
+
+    }); */

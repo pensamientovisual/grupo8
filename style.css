@@ -4,6 +4,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    color: white;
+
+}
 /*.suptab{
     background-color: gray;
 }*/
@@ -127,19 +131,45 @@ button {
     margin: 10px 15px;
     
 }
+#BotonReferencias{
+    font-size: 20px;
+    display: block;
+    background-color:#e84145;
+    border: none;
+    color: white;
+    text-align: center;
+    padding:20px;
+    margin:10px;
+    
+    text-decoration: none;
+    
+    width: 180px;
+    padding: 10px 10px;
+    margin: 10px 15px;
+}
 #BotonSiguiente1{
     font-size: 20px;
     border-radius: 5px;
     margin: 0px 0px 0px 700px;
 }
-#BotonSiguiete2{
+#BotonSiguiente2{
     display: flex;
     align-self: right;
 }
 /*Pie de Página*/
 
 #PieDePagina{
+    margin: 1% 1% 1% 1%;
     font-size: 16px;
+    background-color: #3d3d3d;
+
+}
+#pv{
+    margin: 1% 1% 1% 1%; 
+    
+}
+#g8{
+    margin: 1% 1% 1% 1%;
 }
 
 /*Fin Botones siguiente*/
@@ -535,6 +565,9 @@ font-size: 12px;
 
 /*DDHH */
 
+.imgDDHH{
+    width:50px;
+}
 #DerechoB{
     width:80%;
     padding:10px;
