@@ -11,7 +11,8 @@ $(document).ready(function(){
     var n8 = $("#n8");
     var n9 = $("#n9");
     var n10 = $("#n10");
-    var tci = $("#tituloci");
+    var n11 = $("#n11");
+    var tci = $("#textoci");
     var eci = $("#explicacionci");
     var regiones = $(".regiones");
     var iniciativas=$(".iniciat");
@@ -19,6 +20,8 @@ $(document).ready(function(){
     var BotonDerecho= $(".BotonDerecho");
     var BDclickeado= false;
     var Porcentaje= $("#Porcentaje");
+    var niña = $("#niña");
+    var niño = $("#niño");
     var r1=$("#CL-AI");
     var r2=$("#CL-MA");
     var r3=$("#CL-TA");
@@ -628,16 +631,7 @@ $(document).ready(function(){
 
       
     
-    x.click(function(){ 
-        if (niñesoff==false){
-            niñesoff=true;
-        }
-        $("#tituloci").hide();
-        $("#explicacionci").hide();
-        $("#x").hide();
-        $(".niñes").fadeTo("fast",1);
-        $(".vic").fadeTo("fast",1);
-    });
+   
 
             //$(this).css("background-color" ,"#e84145")
         //var region = $(this).attr("title")
@@ -744,12 +738,23 @@ $(document).ready(function(){
     //fin cosas Ari
 
     //inicio cosas Mai
+    tci.hide();
+    
+    var mediosniñes = $(".mediosniñes")
     n10.mouseenter(function(){
-        if (niñesoff==true) {
-            $(this).fadeTo("fast",0.5);
-        }   
+        $(this).fadeTo("fast",0.5);
+           
     });
     n10.mouseleave(function(){
+        if (niñesoff==true) {
+            $(this).fadeTo("fast",1);}
+
+    });
+    n11.mouseenter(function(){
+        $(this).fadeTo("fast",0.5);
+           
+    });
+    n11.mouseleave(function(){
         if (niñesoff==true) {
             $(this).fadeTo("fast",1);}
 
@@ -766,29 +771,40 @@ $(document).ready(function(){
 
     });
     niñes.click(function(){
-        if (niñesoff==true){
-            niñesoff=false;
-        }
-        $("#x").fadeTo("fast",1);
-        $(".niñes").fadeTo("fast",0.05);
-        $(".vic").fadeTo("fast",0.05);
-
+        //if (niñesoff==true){
+            //niñesoff=false;
+        //}
+        $(tci).show();
+        $(this).hide();
     });
-    n1.click(function(){ 
+    x.click(function(){ 
+        if (niñesoff==false){
+            niñesoff=true;
+        }
         
-        $("#tituloci").text("VICTIMA DE MALTRATO FISICO")
+        $("#tituloci").hide();
+        $(tci).hide();
+        $("#x").hide();
+        $(".niñes").fadeTo("fast",1);
+        $(".vic").fadeTo("fast",1);
+        $(".niñes").show();
+    });
+    
+    n1.click(function(){ 
+        $("#tituloci").text("NEGLIGENCIA PARENTAL")
         $("#tituloci").fadeTo("fast",1)
         $("#explicacionci").fadeTo("fast",1)
-        $("#explicacionci").text("Refiere a una situación en que un niño, niña o adolescente ha sufrido, ocasional o habitualmente, agresiones físicas, por parte de los padres, cuidadores, otros adultos o instituciones. Puede o no tener como resultado una lesión física o la generación de enfermedades")
-        $(".niñes").fadeTo("fast",0.05);
-        $(".vic").fadeTo("fast",0.05);
+        $("#explicacionci").text("La NEGLIGENCIA PARENTAL, es un tipo de maltrato infantil, ejercida por los padres y/o adultos responsables, sostenida en el tiempo que priva a los niños y las niñas del cuidado, protección y afecto que deben recibir de los adultos responsables que le rodean para un óptimo desarrollo integral.")
+        $(".niñes").fadeTo("fast",0.1);
+        $(".vic").fadeTo("fast",0.1);
+        
         
     });
     n2.click(function(){ 
-        $("#tituloci").text("VICTIMA DE MALTRATO PSICOLÓGICO");
+        $("#tituloci").text("VICTIMA DE MALTRATOS");
         $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Los adultos a cargo, padres, madres tutores a cargo del cuidado del niño, niña o adolescente, manifiestan hostilidad o rechazo verbal hacia éste, a través de insultos, desprecio, crítica, amenaza de castigo, aislamiento abandono, etc. ");
+        $("#explicacionci").text("Refiere a una situación en que un niño, niña o adolescente ha sufrido, ocasional o habitualmente, agresiones físicas y/o psicológicas, por parte de los padres, cuidadores, otros adultos o instituciones, estos manifiestan hostilidad o rechazo verbal hacia el NNA, a través de insultos, desprecio, crítica, amenaza de castigo, aislamiento o abandono.");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
     });
@@ -849,14 +865,14 @@ $(document).ready(function(){
         $(".vic").fadeTo("fast",0.1);
     });
     
-    n10.click(function(){ 
+    /*n10.click(function(){ 
         $("#tituloci").text("Víctima de maltrato prenatal");
         $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
         $("#explicacionci").text("Explicación causal de ingreso de Víctima de maltrato prenatal");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
-    });
+    });*/
     
 
 /* MAPAS MATI NO TOCAR PLS */
@@ -866,7 +882,7 @@ $(document).ready(function(){
         pais.text("Canada")
         pais_desc_1.text("Uwu")
         pais_desc_2.text("Xd")
-        pais_desc_3.text("Djdjdjd")
+        pais_desc_3.text("El sistema de infraccio de Canadá está diseñado para evitar la ")
     });
 
     Canada.mouseleave(function(){
@@ -888,7 +904,7 @@ $(document).ready(function(){
     Chile2.mouseenter(function(){
         Chile2.css("fill","#096cb5")
         pais.text("Chile")
-        pais_desc_1.text("Uwu")
+        pais_desc_1.text("En Chile la gran mayoría de los NNA desprotegidos residen en los centros del Sename. Pocos pueden optar por el programa Familia de Acogida Especializada, ya que esta disponible en regiones limitadas del país y no es un servicio masifi")
         pais_desc_2.text("Xd")
         pais_desc_3.text("Djdjdjd")
     });  
@@ -927,7 +943,7 @@ $(document).ready(function(){
         pais.text("Alemania")
         pais_desc_1.text("Para situaciones críticas los niñes y jóvenes son enviados a casas de acogida. Sin embargo, a les adolescentes se les envía muchas veces a residencias comunes.")
         pais_desc_2.text("")
-        pais_desc_3.text("Existen cárceles para jóvenes. Sin embargo, están enfocadas en la rehabilitación y reinserción de los jpo")
+        pais_desc_3.text("Existen cárceles para jóvenes. Sin embargo, están enfocadas en la rehabilitación y reinserción de los jóvenes.")
     });
 
     Germany.mouseleave(function(){
