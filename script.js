@@ -771,11 +771,14 @@ $(document).ready(function(){
 
     });
     niñes.click(function(){
-        //if (niñesoff==true){
-            //niñesoff=false;
-        //}
+        if (niñesoff==true){
+            niñesoff=false;
+        }
+        
         $(tci).show();
-        $(this).hide();
+        $(x).show();
+        $(niñes).hide();
+        $(this).fadeTo("fast",1);
     });
     x.click(function(){ 
         if (niñesoff==false){
@@ -797,7 +800,7 @@ $(document).ready(function(){
         $("#explicacionci").text("La NEGLIGENCIA PARENTAL, es un tipo de maltrato infantil, ejercida por los padres y/o adultos responsables, sostenida en el tiempo que priva a los niños y las niñas del cuidado, protección y afecto que deben recibir de los adultos responsables que le rodean para un óptimo desarrollo integral.")
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
-        
+        $(this).fadeTo("fast",1);
         
     });
     n2.click(function(){ 
@@ -807,6 +810,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Refiere a una situación en que un niño, niña o adolescente ha sufrido, ocasional o habitualmente, agresiones físicas y/o psicológicas, por parte de los padres, cuidadores, otros adultos o instituciones, estos manifiestan hostilidad o rechazo verbal hacia el NNA, a través de insultos, desprecio, crítica, amenaza de castigo, aislamiento o abandono.");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     n3.click(function(){ 
         $("#tituloci").text("Víctima-Testigo de Violencia Intrafamiliar");
@@ -815,6 +819,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Los niños, niñas o adolescentes presencian o escuchan violencia doméstica o maltrato físico o psíquico en la pareja o hacia otros integrantes de la familia. La Violencia Intrafamiliar, VIF se define como “toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro/a miembro de la familia”.");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     n4.click(function(){ 
         $("#tituloci").text("Niño/a o adolescente en proceso de integración familiar");
@@ -823,6 +828,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Se trata de aquellos niños, niñas o adolescentes egresados de una Residencia o CREAD hacia un programa FAE (OCA o AA.DD.), con fines de acompañamiento en el proceso de integración familiar ");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     n5.click(function(){ 
         $("#tituloci").text("Víctima de Peores Formas de Trabajo Infantil");
@@ -831,6 +837,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Formas de explotación laboral hacia niños, niñas y adolescentes, diferentes de la explotación sexual, que implican su utilización para la comisión de ilícitos, prácticas asociadas a la esclavitud o su utilización en trabajos, que por su naturaleza o características, implican riesgo para la salud y el desarrollo.");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     n6.click(function(){ 
         $("#tituloci").text("Consumo problemático de drogas");
@@ -839,6 +846,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Se entiende consumo problemático cuando es regular y generalmente frecuente, hay disfuncionalización parcial o global por el consumo y puede haber o no presencia de tolerancia y síndrome de abstinencia.");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     n7.click(function(){ 
         $("#tituloci").text("Situación de calle");
@@ -847,6 +855,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Se trata de una situación en la cual un niño, niña o adolescente, se encuentra viviendo o presenta prolongada permanencia en la calle, se relacionan en grupos con sus pares, desarrollando circuitos callejeros en lugares públicos.");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     n8.click(function(){ 
         $("#tituloci").text("Trabajo infantil");
@@ -855,6 +864,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Explicación causal de ingreso de Trabajo infantil");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     n9.click(function(){ 
         $("#tituloci").text("Solicitud de Evaluación");
@@ -863,6 +873,7 @@ $(document).ready(function(){
         $("#explicacionci").text("Explicación causal de ingreso de Solicitud de Evaluación");
         $(".niñes").fadeTo("fast",0.1);
         $(".vic").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
     });
     
     /*n10.click(function(){ 
@@ -904,9 +915,9 @@ $(document).ready(function(){
     Chile2.mouseenter(function(){
         Chile2.css("fill","#096cb5")
         pais.text("Chile")
-        pais_desc_1.text("En Chile la gran mayoría de los NNA desprotegidos residen en los centros del Sename. Pocos pueden optar por el programa Familia de Acogida Especializada, ya que esta disponible en regiones limitadas del país y no es un servicio masifi")
-        pais_desc_2.text("Xd")
-        pais_desc_3.text("Djdjdjd")
+        pais_desc_1.text("En Chile la gran mayoría de los NNA desprotegidos residen en los centros del Sename. Pocos pueden optar por el programa Familia de Acogida Especializada, ya que esta disponible en regiones limitadas del país y no es un servicio masificado.")
+        pais_desc_2.text("El Sename, como institución estatal dirige y subsidia la mayoría de los centros residenciales. Sin embargo, aparecen con el tiempo instituciones independientes, como ONGs.")
+        pais_desc_3.text("En nuestro país no existen instituciones separadas para los NNA víctimas y victimarios.")
     });  
     
     Chile2.mouseleave(function(){
@@ -917,7 +928,7 @@ $(document).ready(function(){
     Mexico.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Mexico.css("fill","#096cb5")
         pais.text("Mexico")
-        pais_desc_1.text("Uwu")
+        pais_desc_1.text("En México existen Instituciones de acogidas como orfanatos, residencias, y también existen instituciones que trabajan con Foster Care.")
         pais_desc_2.text("Instituciones públicas y privadas. Los orfanatos pueden ser públicos, privados, subsidiados o financiados por caridad.")
         pais_desc_3.text("Existe un sistema donde se internan a los adolescentes (de 12 a 17 años) que hayasen cometido una falta grave.")
     });
