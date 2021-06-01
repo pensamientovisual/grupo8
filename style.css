@@ -74,6 +74,7 @@ button {
     flex-wrap:wrap;
     justify-content: center;
     width: 100%;
+    margin: 0% 0% 10% 0%;
 }
 #botoneschile{
     width: 100%;
@@ -183,8 +184,9 @@ button {
 
 #DerechoA{
     border:solid;
-    height:500px;
+    height:auto;
     width:200px;
+    text-align: center;
 }
 
 
@@ -313,7 +315,7 @@ button {
 }
 #subtitulo0 {
     text-align: center;
-    font-size: 55px;
+    font-size: 49px;
     width:90%; 
     justify-content: center;
     display:inline-block;
@@ -546,6 +548,10 @@ button {
     color: beige;
 }
 
+#DesDDHH{
+    font-size:15px;
+}
+
 
 #pais {
 font-size: 20px;
@@ -567,6 +573,9 @@ font-size: 12px;
 
 .imgDDHH{
     width:50px;
+}
+#DDHH {
+    width: 100%;
 }
 #DerechoB{
     width:80%;
@@ -670,7 +679,10 @@ font-size: 12px;
     height: 390px;
     width: 600px;
 }
-
+#hazclick{
+    font-size: 20px;
+    margin: 1% 1% 1% 5%;
+}
 /*FIN DDHH*/
 /* PAISES DE MATI */
 
