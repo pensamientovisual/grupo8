@@ -123,6 +123,10 @@ $(document).ready(function(){
     
     var desDDHH=("#DesDDHH");
 
+    var leyendaisi=$("#Leyendaisi");
+
+    leyendaisi.hide()
+
     botoneschile.mouseenter(function(){
         $(this).fadeTo("fast",0.5)
     })
@@ -190,7 +194,10 @@ $(document).ready(function(){
 
         $(this).css("webkit-animation-duration", "0s")
 
+        leyendaisi.show()
+
         inicio3.show()
+
 
         regiones.mouseenter(function(){
             $(this).fadeTo("fast",0.5)
@@ -348,6 +355,8 @@ $(document).ready(function(){
 
         $(this).css("webkit-animation-duration", "0s")
 
+        leyendaisi.show()
+
         inicio3.show()
 
         texto123.text("NNA en SENAME según NNA tota de la Región")
@@ -504,6 +513,8 @@ $(document).ready(function(){
         $(this).css("color", "blue")
 
         $(this).css("webkit-animation-duration", "0s")
+
+        leyendaisi.show()
 
         inicio3.show()
 
@@ -1131,7 +1142,7 @@ $(document).ready(function(){
 
     n1.mouseenter(function(){
         $("#inicioci2").text("NEGLIGENCIA PARENTAL"); 
-        $("#pci").text("31.4% (71.052)") ;
+        $("#pci").text("31.4% (71.052 niñes)") ;
     });
     
     n2.click(function(){ 
@@ -1142,78 +1153,78 @@ $(document).ready(function(){
     });
     n2.mouseenter(function(){
         $("#inicioci2").text("VÍCTIMA DE MALTRATOS") ;
-        $("#pci").text("9.5% (21.561)") ;
+        $("#pci").text("9.5% (21.561 niñes)") ;
     });
 
     n3.click(function(){ 
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("La Violencia Intrafamiliar, VIF se define como “toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro/a miembro de la familia”. Los niños, niñas o adolescentes presencian o escuchan violencia doméstica o maltrato físico o psíquico en la pareja o hacia otros integrantes de la familia. ");
+        $("#explicacionci").text("La VIOLENCIA INTRAFAMILIAR, VIF se define como “toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro/a miembro de la familia”. Los niños, niñas o adolescentes presencian o escuchan violencia doméstica o maltrato físico o psíquico en la pareja o hacia otros integrantes de la familia. ");
         $(".niñes").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
     n3.mouseenter(function(){
         $("#inicioci2").text("VIOLENCIA INTRAFAMILIAR") ;
-        $("#pci").text("16.9% (38.140)") ;
+        $("#pci").text("16.9% (38.140 niñes)") ;
     });
     n4.click(function(){ 
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Formas de explotación laboral hacia niños, niñas y adolescentes, diferentes de la explotación sexual, que implican su utilización para la comisión de ilícitos, prácticas asociadas a la esclavitud o su utilización en trabajos, que por su naturaleza o características, implican riesgo para la salud y el desarrollo.");
+        $("#explicacionci").text("El TRABAJO INFANIL consta de las formas de explotación laboral hacia niños, niñas y adolescentes, diferentes de la explotación sexual, que implican su utilización para la comisión de ilícitos, prácticas asociadas a la esclavitud o su utilización en trabajos, que por su naturaleza o características, implican riesgo para la salud y el desarrollo.");
         $(".niñes").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
     n4.mouseenter(function(){
         $("#inicioci2").text("TRABAJO INFANTIL");
-        $("#pci").text("0.6% (1.400)") ; 
+        $("#pci").text("0.6% (1.400 niñes)") ; 
     });
     n5.click(function(){ 
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Se entiende por abuso o conducta sexual abusiva, al contacto o interacción sexual de un niño (a) o adolescente mayor de 10 años, con otro niño, niña o adolescente que no da o no puede dar su consentimiento y percibe aquel acto como dañino o humillante, ya sea que involucre o no daño físico.");
+        $("#explicacionci").text("Se entiende por PRÁCTICAS ABUSIVAS SEXUALES, al contacto o interacción sexual de un niño (a) o adolescente mayor de 10 años, con otro niño, niña o adolescente que no da o no puede dar su consentimiento y percibe aquel acto como dañino o humillante, ya sea que involucre o no daño físico.");
         $(".niñes").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
     n5.mouseenter(function(){
         $("#inicioci2").text("PRÁCTICAS ABUSIVAS SEXUALES");
-        $("#pci").text("0.8% (1.816)") ; 
+        $("#pci").text("0.8% (1.816 niñes)") ; 
     });
     n6.click(function(){
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Víctima de abandono es la situación de negligencia extrema que afecta a un niño, niña o adolescente donde el adulto a cargo no satisface sus necesidades materiales ni afectivas en periodos muy prolongados de tiempo y el vínculo prácticamente no existe. Ejemplo: abandono en la vía pública, en el hospital, etc.");
+        $("#explicacionci").text("VÍCTIMA DE ABANDONO es la situación de negligencia extrema que afecta a un niño, niña o adolescente donde el adulto a cargo no satisface sus necesidades materiales ni afectivas en periodos muy prolongados de tiempo y el vínculo prácticamente no existe. Ejemplo: abandono en la vía pública, en el hospital, etc.");
         $(".niñes").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
     n6.mouseenter(function(){
         $("#inicioci2").text("VÍCTIMA DE ABANDONO");
-        $("#pci").text("0.6% (1.428)") ; 
+        $("#pci").text("0.6% (1.428 niñes)") ; 
     });
     n7.click(function(){ 
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Víctimas de delitos, incluyen a los NNA víctimas de vulneración y/o delitos contra la indemnidad sexual, víctimas de explotación sexual, entre otras");
+        $("#explicacionci").text("VÍCTIMAS DE DELITOS, incluyen a los NNA víctimas de vulneración y/o delitos contra la indemnidad sexual, víctimas de explotación sexual, entre otras");
         $(".niñes").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
     n7.mouseenter(function(){
         $("#inicioci2").text("VÍCTIMA DE DELITOS (excluyendo maltratos)") ;
-        $("#pci").text("11.3% (25.5)") ;
+        $("#pci").text("11.3% (25.522 niñes)") ;
     });
     n8.click(function(){ 
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Niño, niña o adolescente (inimputables) que atenta contra derechos de terceros y/o propiedad (se excluyen transgresiones a la indemnidad sexual de otras personas) y que por su edad requieren medida de protección. También se considerarán los mayores de 14 años que hayan cometido faltas establecidas en el código penal. ");
+        $("#explicacionci").text("FALTAS O DELITOS INIMPUTABLES: Niño, niña o adolescente (inimputables) que atenta contra derechos de terceros y/o propiedad (se excluyen transgresiones a la indemnidad sexual de otras personas) y que por su edad requieren medida de protección. También se considerarán los mayores de 14 años que hayan cometido faltas establecidas en el código penal. ");
         $(".niñes").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
     n8.mouseenter(function(){
         $("#inicioci2").text("FALTAS O DELITOS INIMPUTABLES") ;
-        $("#pci").text("1.1% (2.378)") ;
+        $("#pci").text("1.1% (2.378 niñes)") ;
     });
     n9.click(function(){ 
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Otras causales de ingreso, agrupa, principalmente, las siguientes causales de ingreso: “Vulneración de Derechos en estudio”; “Protección según orden del Tribunal; y “Ejerce bullying/matonaje o intimidación escolar”.");
+        $("#explicacionci").text("Otras causales de ingreso, agrupa, principalmente, las siguientes causales de ingreso: “Vulneración de Derechos en estudio”; “Protección según orden del Tribunal; y “Ejerce bullying/matonaje o intimidación escolar: Niño, niña o adolescente víctima o victimario de violencia en contexto escolar. Esta conducta implica un comportamiento de uso y/o abuso de poder o fuerza por parte de un niño/a o adolescente o un grupo – más fuerte – en contra de otro niño/a o adolescente de manera directa y/o a sus bienes, en el contexto escolar.");
         $(".niñes").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
     n9.mouseenter(function(){
         $("#inicioci2").text("OTRAS CAUSALES");
-        $("#pci").text("27.7% (62.561)") ; 
+        $("#pci").text("27.7% (62.561 niñes)") ; 
     });
     
     /*n10.click(function(){ 
