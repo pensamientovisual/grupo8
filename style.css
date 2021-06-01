@@ -1,7 +1,7 @@
 div{color:whitesmoke}
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*.suptab{
@@ -27,8 +27,39 @@ body {
     color: white;
     text-align: center;
     display: inline-block;
-    height: 20px;
-}
+    height: 80px;
+    margin: 10px;
+  
+    /*referencias de codigo: https://codepen.io/sekane81/pen/JKuwb */
+
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
 
 button {
     font-family: 'Rubik', sans-serif;
@@ -71,8 +102,8 @@ button {
 
 #menu{
     fill: white;
-    height:20px;
-    width:20px;
+    height:30px;
+    width:30px;
     justify-self:left;
 }
 #Referencias{
@@ -83,24 +114,52 @@ button {
 /*Inicio Botones siguiente*/
 .BotSigs{
     font-size: 20px;
-    display: block
-
+    display: block;
+    background-color: #3d3d3d;
+    border: none;
+    color: white;
+    text-align: center;
+    
+    text-decoration: none;
+    
+    width: 180px;
+    padding: 10px 10px;
+    margin: 10px 15px;
+    
 }
 #BotonSiguiente1{
     font-size: 20px;
     border-radius: 5px;
     margin: 0px 0px 0px 700px;
 }
+#BotonSiguiete2{
+    display: flex;
+    align-self: right;
+}
+/*Pie de Página*/
 
+#PieDePagina{
+    font-size: 16px;
+}
 
 /*Fin Botones siguiente*/
 
 /*GRAFICOS*/
 
+#ContainerDerechos{
+    display:flex;
+    width: 100%;
+}
+
+#DerechoA{
+    border:solid;
+    height:600px;
+    width:400px;
+}
+
+
 .graficos{
     padding: 10px;
-    width: 600px;
-    
 }
 
 #Grafico{
@@ -250,11 +309,13 @@ button {
     font-size: 40px;
     position: relative;
     font-weight: bolder;
-    text-align: center;
+    margin: 0% 10% 0% 2%;
+    
 
 }
 #textoci {
     display: flex;
+    margin: 1% 1% 1% 15%;
     
 }
 /*#tituloci {
@@ -273,8 +334,8 @@ button {
     text-align: center;
     position: relative;
     width: 1000px;
-    height: auto;
-    font-size: 20px;
+    height: 150px;
+    font-size: 18px;
     border: 1px solid white;
     opacity: 0;
     padding: 5px;
@@ -283,28 +344,50 @@ button {
 
 #subtit1{
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     margin: 1% 1% 1% 1%;
     padding: 1%;
     border-radius: 5px;
     background-color: #3d3d3d;
 }
+#inicioci2{
+    width: 100%;
+    font-size: 25px;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    text-align: center;
+}
+#pci{
+    width: 100%;
+    font-size: 50px;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    text-align: center;
+}
 #subtit{
-    font-size:20px;
+    font-size:14px;
     padding: 5px;    
-    margin: 20px; 
+    margin: 1% 1% 1% 1%; 
+    
 }
 
 #NinosSuperior{
     display:flex;
     justify-content: space-evenly;
 }
-
-#NinosInferior{
+#porcentajeci{
+    display: flex;
+    justify-content: center;
+}
+/*#NinosInferior{
     display:flex;
     justify-content: space-evenly;
     
-}
+}*/
 
 #ThirdRow{
     display: flex;
@@ -320,8 +403,8 @@ button {
 .niñes {
     display: block;
     margin: auto;
-    width: 180px;
-    padding: 20px 10px 0px;
+    width: 100%;
+    padding: 1% 1% 1% 1%;
    
 }
 .textoinicio2 {
@@ -333,11 +416,11 @@ button {
     color: white;
     font-size: 17px;
     font-weight: bolder;
-    color: #5fa6d8;
+    color: rgb(139, 201, 245);
 }
 #textoinicioregiones {
     text-align: center;
-    color: white;
+    color: #3d3d3d;
     font-weight: bolder;
 }
 .textoinicio31 {
@@ -364,7 +447,7 @@ button {
     margin: 0% 0% 10% 5%;
     padding: 3%;
     border-radius: 5px;
-    background-color: #3d3d3d
+    background-color: #ffffff
 }
 #inicio3y5 {
     width:20%;
@@ -415,8 +498,6 @@ button {
     height: 450px;
 }
 #textboxmundo{
-    padding:10px;
-    margin:20px;
     width: 300px
 }
 
@@ -430,18 +511,23 @@ font-size: 20px;
 }
 
 #pais_desc_1 {
-font-size: 15px;
+font-size: 12px;
 }
 
 #pais_desc_2 {
-font-size: 15px;
+font-size: 12px;
 }
 
 #pais_desc_3{
-font-size: 15px;
+font-size: 12px;
 }
 
 /*DDHH */
+
+#DerechoB{
+    width:80%;
+    padding:10px;
+}
 
 .BotonDerecho{
     text-align: center;
@@ -457,13 +543,11 @@ font-size: 15px;
     width:300px;
     display: inline-table;
 }
+
 #contenido{
-    background-color: rgb(49, 49, 49);
-    width: 800px;
-    height: 450px;
-    display: inline-table;
-    padding: 8px;    
-    margin: 30px 8px 8px; 
+    display:flex;
+    margin:10px;
+    padding:10px;
 }
 
 #LineaMedio{
@@ -477,8 +561,11 @@ font-size: 15px;
 .DDHHdato{
     display:inline-table;
     margin:10px;
-    max-width: 400px;
     justify-content:center ;
+}
+
+#NyT{
+    display:flex;
 }
 
 #Porcentaje{
@@ -497,14 +584,42 @@ font-size: 15px;
     display:inline-flex;
     margin:10px;
 }
-#Dato1{
-    font-size: 20px;
+#titderecho{
+    font-size: 40px;
+    color: rgb(206, 52, 52);
     margin:10px 0px 0px 20px;
-
+}
+#Derecho1{
+    font-size: 15px;
+}
+#Derecho2{
+    font-size: 15px;
+}
+#Derecho3{
+    font-size: 15px;
+}
+#Derecho4{
+    font-size: 15px;
+}
+#Dato1{
+    font-size: 15px;
+}
+#titdato1{
+    font-size: 15px;
 }
 #Dato2{
-    font-size: 20px;
+    font-size: 15px;
 }
+#titdato2{
+    font-size: 15px;
+}
+#Dato3{
+    font-size: 15px;
+}
+#titdato3{
+    font-size: 15px;
+}
+
 #precontenido{
     display: inline-block ;
     text-align: center;
@@ -515,12 +630,23 @@ font-size: 15px;
 /*FIN DDHH*/
 /* PAISES DE MATI */
 
+.leyenda_1{
+    display: flex;
+    font-size: 14px;
+    align-content: flex-start;
+}
+
+.leyenda_2{
+    padding: 0px 10px;
+}
+
+
 #pais_desc{
     font-size: 1vw;
 }
 
 .Canada{
-    fill:#ececec;
+    fill:#4b7fa7;
 }
 
 /*.Australia{
@@ -528,27 +654,27 @@ font-size: 15px;
 }*/
 
 .Chile2{
-    fill:#ececec;
+    fill:#cf3a3f;
 }
 
 .United_States{
-    fill:#ececec;
+    fill:#4b7fa7;
 }
 
 .Germany{
-    fill:#ececec;
+    fill:#4b7fa7;
 }
 
 .Colombia{
-    fill:#ececec;
+    fill:#4b7fa7;
 }
 
 .Argentina{
-    fill:#ececec;
+    fill:#4b7fa7;
 }
 
 .Mexico{
-    fill:#ececec;
+    fill:#4b7fa7;
 }
 
 

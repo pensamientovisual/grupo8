@@ -57,6 +57,9 @@ $(document).ready(function(){
     var pais_desc_2=$("#pais_desc_2");
     var pais_desc_3=$("#pais_desc_3");
 
+    var BotonReferencias = $("#BotonReferencias");
+    var Refs = $('#Refs');
+
     /*ARI*/
     var ds=$("#DerechoALaSalud");
     var dvf=$("#DerechoAVivirEnFamilia");
@@ -78,6 +81,7 @@ $(document).ready(function(){
     var boton1=$("#boton1");
     var boton2=$("#boton2");
     var boton3=$("#boton3");
+    var botoneschile=$(".botonchile");
 
     var niñesoff =true;
     var x = $("#x");
@@ -85,6 +89,14 @@ $(document).ready(function(){
     var TituloSeccion=$("#TituloSeccion");
 
     var texto123=$("#textoinicioregiones")
+
+    botoneschile.mouseenter(function(){
+        $(this).fadeTo("fast",0.5)
+    })
+
+    botoneschile.mouseleave(function(){
+        $(this).fadeTo("fast",1)
+    })
 
     boton1.click(function(){
         r1.css("fill", "hsl(6, 78%, 87%)")
@@ -104,6 +116,11 @@ $(document).ready(function(){
         r15.css("fill", "hsl(6, 78%, 18%)")
         r16.css("fill", "hsl(6, 78%, 70%)")
 
+        $(this).css("background-color", "white")
+        $(this).css("color", "blue")
+
+        $(this).css("webkit-animation-duration", "0s")
+
         inicio3.show()
 
         regiones.mouseenter(function(){
@@ -118,6 +135,7 @@ $(document).ready(function(){
         regiones.click(function(){
             $(this).css("fill","white")
         });
+
 
         texto123.text("NNA en SENAME según NNA en Chile")
 
@@ -255,6 +273,11 @@ $(document).ready(function(){
         r14.css("fill", "hsl(6, 78%, 65%)")
         r15.css("fill", "hsl(6, 78%, 76%)")
         r16.css("fill", "hsl(6, 78%, 72%)")
+
+        $(this).css("background-color", "white")
+        $(this).css("color", "blue")
+
+        $(this).css("webkit-animation-duration", "0s")
 
         inicio3.show()
 
@@ -408,6 +431,11 @@ $(document).ready(function(){
         r15.css("fill", "hsl(6, 78%, 47%)")
         r16.css("fill", "hsl(6, 78%, 83%)")
 
+        $(this).css("background-color", "white")
+        $(this).css("color", "blue")
+
+        $(this).css("webkit-animation-duration", "0s")
+
         inicio3.show()
 
         texto123.text("N° Residencias en cada región según residencias totales en Chile")
@@ -543,8 +571,25 @@ $(document).ready(function(){
     });
 
     var inicio3=$("#inicio3");
-
+    
     inicio3.hide()
+    Refs.hide()
+    var RefsVisibles = false
+    BotonReferencias.click(function(){
+        if(RefsVisibles == false)
+        {
+            RefsVisibles = true;
+            BotonReferencias.text("Ocultar referencias")
+            Refs.show()
+        } else
+        {
+            RefsVisibles = false
+            BotonReferencias.text("Mostrar Referencias")
+            Refs.hide()
+        }
+    });
+
+
 
     /*variables para los botones*/
     var Inicio=$("#Inicio");
@@ -579,7 +624,7 @@ $(document).ready(function(){
         DDHH.hide()
         Historia.hide()
         Mundo.hide()
-        $("#TituloSeccion").text("inicio") 
+        $("#TituloSeccion").text("SENAME EN CHILE:") 
 
     });
 
@@ -671,42 +716,81 @@ $(document).ready(function(){
 
     de.click(function(){
         $("#Porcentaje").text("20%");
-        $("#Dato1").text("*dato porcentaje 1: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum") ;
-        $("#Dato2").text("información gráfico 1 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
+        $("#titderecho").text("Derecho a la Educación") ;
+        $("#Derecho1").text("Aprender todo aquello que desarrolle al máximo su personalidad y capacidades intelectuales, físicas y sociales.");
+        $("#Derecho3").text("Todos los niños deberían tener acceso a la enseñanza secundaria.");
+        $("#Derecho4").text(" ");
+        
+        $("#Dato1").text("El analfabetismo corresponde a la ausencia de destrezas elementales básicas tales como la lectura, escritura, y habilidades matemáticas básicas. El analfabetismo en Chile se mide sobre la población de 15 años o más, y este  consta de un 1% del total, sin embargo, dentro del SENAME un 4% de lxs NNA son consideradxs analfabetxs.");
+        
+        $("#Dato2").text("Situación en la que un NNA no alcanza los objetivos curriculares, atrasándose en su progresión académica, ya sea por semestres o años. Esto se puede deber a factores tanto personales como relacionados al ambiente que rodea al NNA. La prevalencia del retraso escolar es significativamente mayor dentro del sename en comparación con la población de NNA total en Chile, con dichos porcentajes siento 48% y 11% respectivamente.");
+        
+        $("#Dato3").text("Se define a la deserción escolar como el abandono parcial o total del centro escolar y de los estudios por parte del NNA, sea esta educación básica o media. Para la totalidad de lxs NNA en Chile, se tiene puede notar un 3% de deserción escolar, comparado con el 36% presente en NNA integrados en la red SENAME.");
         $(".graficos").hide()
         $("#g1").show()
     });
 
     dvf.click(function(){
         $("#Porcentaje").text("32%")
-        $("#Dato1").text("*dato porcentaje 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") 
-        $("#Dato2").text("información gráfico 2  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $("#titderecho").text("Derecho a Vivir en Familia") 
+        $("#Derecho1").text("La vida, el desarrollo, la participación y la protección.");
+        $("#Derecho2").text("Tener un nombre y una nacionalidad.");
+        $("#Derecho3").text("Saber quiénes son sus papás y a no ser separados de ellos.");
+        $("#Derecho4").text("Que el Estado garantice a sus padres la posibilidad de cumplir con sus deberes y derechos.");
+        $("#Dato1").text("El abandono de NNA se produce cuando un padre, tutor o persona a cargo de un NNA lx abandona sin consideración alguna por su salud física, seguridad o bienestar y con la intención de dejarlo por completo; en algunos casos, también ocurre cuando no se brinda la atención necesaria a un NNA que vive bajo el mismo techo. Si bien este abandono generalmente implica el abandono físico, también puede incluir casos extremos de abandono emocional. Una persona acusada de abandono de NNA puede enfrentar penas de delito grave o menor y otras consecuencias, mientras que lxs menores en cuestión son derivadxs al sistema de cuidado alternativo (ya sea una residencia o una familia de acogida).");
+        $("#Dato2").text("La susceptibilidad de adopción se declara mediante un juicio, el cual consta de la acreditación de una o más de las causales legales establecidas en el artículo 12 de la Ley N° 19.620 que derivan en que un NNA no pueda continuar conviviendo con su familia de origen. En estos casos, el NNA es separadx de su medio familiar por orden judicial, e ingresa al sistema de cuidado alternativo (ya sea una residencia o una familia de acogida). Este procedimiento de susceptibilidad de adopción también podrá iniciarse antes del nacimiento, debiendo ser patrocinado sólo por el Sename o por un organismo acreditado. Para el gobierno de Chile, se tiene como meta que la institucionalización sea siempre una medida transitoria, a objeto de frenar la situación de vulneración de derechos a la que se ha estado expuesto, otorgándole al lxs NNA un espacio de protección");
+        $("#Dato3").text("Lxs NNA que pueden ser adoptados, en general han vivenciado experiencias muy dolorosas de separaciones tempranas, graves vulneraciones de derechos y prolongados períodos de institucionalización que han dejado huellas en su desarrollo integral, emocional y vincular. Esta realidad complejiza aún más los desafíos que deben enfrentar los futuros padres/madres. En este sentido, cobra gran relevancia al momento de decidir su integración a una familia a través de la adopción factores tales como: su edad, condición de salud, el tiempo de vida transcurrido en el sistema de cuidado alternativo y si es parte de un grupo de hermanos. En su gran mayoría, las dificultades señaladas pueden ser superadas en el contexto familiar y/o con asesoría de Especialistas.");
         $(".graficos").hide()
         $("#g2").show()
     });
     dt.click(function(){
         $("#Porcentaje").text("43%");
-        $("#Dato1").text("*dato porcentaje 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") ;
-        $("#Dato2").text("información gráfico 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $("#titderecho").text("Derecho a Recibir Tratamiento") ;
+        $("#Derecho1").text("Los niños impedidos tienen derecho a los servicios de rehabilitación, y a la educación y capacitación que los ayuden a disfrutar de una vida plena y decorosa.");
+        $("#Derecho2").text("El derecho de un trato especial en caso de privación de la libertad.");
+        $("#Derecho3").text(" ");
+        $("#Derecho4").text(" ");
+        $("#Dato1").text("Uno de los derechos recogidos en la Declaración Universal de los Derechos Humanos, es el derecho de lxs NNA a recibir cuidados especiales. Todxs lxs NNA tienen derecho a recibir cuidados especiales, tratamiento y educación especiales, cuando su condición y situación particular lo requiera. Al considerar los casi 100,000 NNA ingresados en la red SENAME en Chile, cabe destacar que el 55% de estos presenta problemas de salud mental y el 3% no está recibiendo ningún tipo de tratamiento.");
+        $("#Dato2").text("Uno de los derechos recogidos en la Declaración Universal de los Derechos Humanos, es el derecho de lxs NNA a recibir cuidados especiales. Todxs lxs NNA tienen derecho a recibir cuidados especiales, tratamiento y educación especiales, cuando su condición y situación particular lo requiera. En este caso, se identifica un 2% de NNA institucionalizadxs que presentan enfermedades crónicas y no están recibiendo un tratamiento adecuado.");
+        $("#Dato3").text("Uno de los derechos recogidos en la Declaración Universal de los Derechos Humanos, es el derecho de lxs NNA a recibir cuidados especiales. Todxs lxs NNA tienen derecho a recibir cuidados especiales, tratamiento y educación especiales, cuando su condición y situación particular lo requiera. En este caso, se identifica un 5% de NNA institucionalizadxs que presentan algún tipo de discapacidad y no están recibiendo un tratamiento adecuado.");
         $(".graficos").hide()
         $("#g3").show()
     });
     di.click(function(){
         $("#Porcentaje").text("54%");
-        $("#Dato1").text("*dato porcentaje 4  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") ;
-        $("#Dato2").text("información gráfico 4 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
+        $("#titderecho").text("Derecho a la protección contra el abuso y la discriminación.") ;
+        $("#Derecho1").text("No ser discriminados por el solo hecho de ser diferentes a los demás.");
+        $("#Derecho2").text("Tener a quien recurrir en caso de que los maltraten o les hagan daño.");
+        $("#Derecho3").text("Que no se les obligue a realizar trabajos peligrosos ni actividades que afecten o entorpezcan su salud, educación y desarrollo.");
+        $("#Derecho4").text(" ");
+        $("#Dato1").text("Frecuentemente, en las historias clínicas de lxs NNA con conductas agresivas sexuales, es posible identificar factores familiares y ambientales entre los cuales se encuentran: El maltrato y la violencia en el hogar, las prácticas deficientes de crianza, la negligencia, exposición a los medios de comunicación sexualmente explícitos y vivir en ambientes altamente sexualizados. Entre los rasgos de personalidad identificados como factores de riesgo de conducta abusivas sexuales se incluyen: Impopularidad entre sus pares, hostilidad, agresividad, baja autoestima y creencias sexuales inadecuadas/incorrectas. Los programas centrados en la protección individual implementados deneve la incorporación de familias y personas en situación de extrema pobreza a las redes sociales, así como su acceso a mejores condiciones de vida. Se trata de servicios especializados de apoyo psicosocial, que mediante metodologías socioeducativas específicas, efectúa itinerarios de acompañamiento que facilitan la transición de familias y personas hacia otros procesos de integración social. Para el caso de algunxs menores dentro del SENAME, se tiene el Programa Abriendo Caminos, el cual es parte de Chile Solidario y se dirige a apoyar a NNA de familias donde hay situaciones de separación forzosa en razón del cumplimiento de condena de alguno de sus integtro de las residencias del SENAME tienen como base la idea que, equipando a las posibles víctimas con insumos conceptuales y conductuales respecto de cómo reconocer situaciones potencialmente riesgosas, y entregando estrategias de resistencia física y verbal a los intentos de los agresores, se puede disminuir las tasas de agresiones sexuales efectivas.");
+        $("#Dato2").text("El sistema Chile Solidario promurantes.");
+        $("#Dato3").text("El Registro Social de Hogares (antes, ficha de protección social) es un sistema de información cuyo fin es apoyar los procesos de selección de beneficiarios de un conjunto amplio de subsidios y programas sociales. El Registro es construido con datos aportados por el hogar y bases administrativas que posee el Estado, proveniente de diversas instituciones. Para la solicitud de ingreso al RSH de menores de 18 años institucionalizadxs que se encuentran bajo cuidado alternativo residencial por una medida judicial de protección, la gestión la realiza cualquier funcionarix de la institución, quien será además informante de dicho registro. La resolución judicial es obligatoria.");
         $(".graficos").hide()
         $("#g4").show()
     });
     ds.click(function(){
         $("#Porcentaje").text("65%");
-        $("#Dato1").text("*dato porcentaje 5  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.") ;
-        $("#Dato2").text("información gráfico 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $("#titderecho").text("Derecho a una vida Segura y Sana") ;
+        $("#Derecho1").text("Tener una vida digna y plena, más aún si se tiene una discapacidad física o mental.");
+        $("#Derecho2").text("Crecer sanos física, mental y espiritualmente.");
+        $("#Derecho3").text("Descansar, jugar y practicar deportes.");
+        $("#Derecho4").text("Vivir en un medio ambiente sano y limpio y a disfrutar del contacto con la naturaleza.");
+        $("#Dato1").text("Se puede definir la historia médica como un documento legal de la rama clínica que surge del contacto entre un paciente y un profesional de la salud, donde se recoge toda la información relevante acerca de la salud del paciente, de modo que se le pueda ofrecer una atención correcta y personalizada. Entre sus funciones, se encuentra la posibilidad de que el médico ofrezca una asistencia personalizada al paciente, aprender y mejorar los aciertos y errores en tratamientos pasados, investigar algunas ramas científicas a partir de la información contenida en el documento, mejorar la calidad de la salud de un paciente, gestionar y administrar los servicios médicos de las instituciones sanitarias, etc.");
+        $("#Dato2").text("Este 42% se compara con el porcentaje total de NNA consumidores de alcohol y drogas en Chile, el cual tiene un valor de 31%. Sin embargo, en la cifra representativa de consumo en NNA ingresados en la red SENAME entregada por el gobierno no se contabiliza a los menores de 18 años que se encuentran en conflicto con la justicia, es decir, que estén involucrados en algún proceso penal. Al considerar estos NNA adicionales, la cifra alcanza un 53%. Las drogas con mayor índice de consumo por integrantes de estas residencias son el alcohol, la marihuana, la pasta base y la cocaína.");
+        $("#Dato3").text("A nivel mundial se estima que entre el 10 y el 20% de los adolescentes experimentan problemas de salud mental. En Chile, se estima que un 38% de NNA presentan algún tipo de problemas de salud mental y/o trastornos mentales. Para la Organización Mundial de la Salud (OMS), los trastornos psiquiátricos que se inician en la infancia o en la adolescencia deben ser una prioridad para la salud pública. Los factores que determinan la salud mental de los y las adolescentes son múltiples, existiendo una correlación directa entre la exposición a factores de riesgo y los efectos provocados en la salud mental. Es posible estimar que un 55% de lxs NNA ingresadxs dentro de la red SENAME presentan algún tipo de problemas de salud mental y/o trastornos mentales.");
         $(".graficos").hide()
         $("#g5").show()
     });
     //Botones siguientes
+    var BotSigs = $(".BotSigs")
+    BotSigs.mouseenter(function(){
+        $(this).fadeTo("fast",0.5);
+    });
+    BotSigs.mouseleave(function(){
+        $(this).fadeTo("fast",1);
 
+    });
     BotSig1.click(function(){
         Ok.hide();
         CausalesDeIngreso.show();
@@ -762,7 +846,8 @@ $(document).ready(function(){
     niñes.mouseenter(function(){
         if (niñesoff==true) {
             $(this).fadeTo("fast",0.5);
-        }   
+        } 
+    
     });
     
     niñes.mouseleave(function(){
@@ -794,7 +879,7 @@ $(document).ready(function(){
     });
     
     n1.click(function(){ 
-        $("#tituloci").text("NEGLIGENCIA PARENTAL")
+        $("#inicioci2").text("NEGLIGENCIA PARENTAL")
         $("#tituloci").fadeTo("fast",1)
         $("#explicacionci").fadeTo("fast",1)
         $("#explicacionci").text("La NEGLIGENCIA PARENTAL, es un tipo de maltrato infantil, ejercida por los padres y/o adultos responsables, sostenida en el tiempo que priva a los niños y las niñas del cuidado, protección y afecto que deben recibir de los adultos responsables que le rodean para un óptimo desarrollo integral.")
@@ -803,77 +888,92 @@ $(document).ready(function(){
         $(this).fadeTo("fast",1);
         
     });
+
+    n1.mouseenter(function(){
+        $("#inicioci2").text("NEGLIGENCIA PARENTAL"); 
+        $("#pci").text("31.4% (71.052)") ;
+    });
+    
     n2.click(function(){ 
-        $("#tituloci").text("VICTIMA DE MALTRATOS");
-        $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Refiere a una situación en que un niño, niña o adolescente ha sufrido, ocasional o habitualmente, agresiones físicas y/o psicológicas, por parte de los padres, cuidadores, otros adultos o instituciones, estos manifiestan hostilidad o rechazo verbal hacia el NNA, a través de insultos, desprecio, crítica, amenaza de castigo, aislamiento o abandono.");
+        $("#explicacionci").text("VÍCTIMA DE MALTRATOS se refiere a una situación en que un niño, niña o adolescente ha sufrido, ocasional o habitualmente, agresiones físicas y/o psicológicas, por parte de los padres, cuidadores, otros adultos o instituciones, estos manifiestan hostilidad o rechazo verbal hacia el NNA, a través de insultos, desprecio, crítica, amenaza de castigo, aislamiento o abandono.");
         $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
+    n2.mouseenter(function(){
+        $("#inicioci2").text("VÍCTIMA DE MALTRATOS") ;
+        $("#pci").text("9.5% (21.561)") ;
+    });
+
     n3.click(function(){ 
-        $("#tituloci").text("Víctima-Testigo de Violencia Intrafamiliar");
-        $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Los niños, niñas o adolescentes presencian o escuchan violencia doméstica o maltrato físico o psíquico en la pareja o hacia otros integrantes de la familia. La Violencia Intrafamiliar, VIF se define como “toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro/a miembro de la familia”.");
+        $("#explicacionci").text("La Violencia Intrafamiliar, VIF se define como “toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica o la libertad y el derecho al pleno desarrollo de otro/a miembro de la familia”. Los niños, niñas o adolescentes presencian o escuchan violencia doméstica o maltrato físico o psíquico en la pareja o hacia otros integrantes de la familia. ");
         $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
+    });
+    n3.mouseenter(function(){
+        $("#inicioci2").text("VIOLENCIA INTRAFAMILIAR") ;
+        $("#pci").text("16.9% (38.140)") ;
     });
     n4.click(function(){ 
-        $("#tituloci").text("Niño/a o adolescente en proceso de integración familiar");
-        $("#tituloci").fadeTo("fast",1);
-        $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Se trata de aquellos niños, niñas o adolescentes egresados de una Residencia o CREAD hacia un programa FAE (OCA o AA.DD.), con fines de acompañamiento en el proceso de integración familiar ");
-        $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
-        $(this).fadeTo("fast",1);
-    });
-    n5.click(function(){ 
-        $("#tituloci").text("Víctima de Peores Formas de Trabajo Infantil");
-        $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
         $("#explicacionci").text("Formas de explotación laboral hacia niños, niñas y adolescentes, diferentes de la explotación sexual, que implican su utilización para la comisión de ilícitos, prácticas asociadas a la esclavitud o su utilización en trabajos, que por su naturaleza o características, implican riesgo para la salud y el desarrollo.");
         $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
-    n6.click(function(){ 
-        $("#tituloci").text("Consumo problemático de drogas");
-        $("#tituloci").fadeTo("fast",1);
+    n4.mouseenter(function(){
+        $("#inicioci2").text("TRABAJO INFANTIL");
+        $("#pci").text("0.6% (1.400)") ; 
+    });
+    n5.click(function(){ 
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Se entiende consumo problemático cuando es regular y generalmente frecuente, hay disfuncionalización parcial o global por el consumo y puede haber o no presencia de tolerancia y síndrome de abstinencia.");
+        $("#explicacionci").text("Se entiende por abuso o conducta sexual abusiva, al contacto o interacción sexual de un niño (a) o adolescente mayor de 10 años, con otro niño, niña o adolescente que no da o no puede dar su consentimiento y percibe aquel acto como dañino o humillante, ya sea que involucre o no daño físico.");
         $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
+    });
+    n5.mouseenter(function(){
+        $("#inicioci2").text("PRÁCTICAS ABUSIVAS SEXUALES");
+        $("#pci").text("0.8% (1.816)") ; 
+    });
+    n6.click(function(){
+        $("#explicacionci").fadeTo("fast",1);
+        $("#explicacionci").text("Víctima de abandono es la situación de negligencia extrema que afecta a un niño, niña o adolescente donde el adulto a cargo no satisface sus necesidades materiales ni afectivas en periodos muy prolongados de tiempo y el vínculo prácticamente no existe. Ejemplo: abandono en la vía pública, en el hospital, etc.");
+        $(".niñes").fadeTo("fast",0.1);
+        $(this).fadeTo("fast",1);
+    });
+    n6.mouseenter(function(){
+        $("#inicioci2").text("VÍCTIMA DE ABANDONO");
+        $("#pci").text("0.6% (1.428)") ; 
     });
     n7.click(function(){ 
-        $("#tituloci").text("Situación de calle");
-        $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Se trata de una situación en la cual un niño, niña o adolescente, se encuentra viviendo o presenta prolongada permanencia en la calle, se relacionan en grupos con sus pares, desarrollando circuitos callejeros en lugares públicos.");
+        $("#explicacionci").text("Víctimas de delitos, incluyen a los NNA víctimas de vulneración y/o delitos contra la indemnidad sexual, víctimas de explotación sexual, entre otras");
         $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
+    });
+    n7.mouseenter(function(){
+        $("#inicioci2").text("VÍCTIMA DE DELITOS (excluyendo maltratos)") ;
+        $("#pci").text("11.3% (25.5)") ;
     });
     n8.click(function(){ 
-        $("#tituloci").text("Trabajo infantil");
-        $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Trabajo infantil");
+        $("#explicacionci").text("Niño, niña o adolescente (inimputables) que atenta contra derechos de terceros y/o propiedad (se excluyen transgresiones a la indemnidad sexual de otras personas) y que por su edad requieren medida de protección. También se considerarán los mayores de 14 años que hayan cometido faltas establecidas en el código penal. ");
         $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
     });
+    n8.mouseenter(function(){
+        $("#inicioci2").text("FALTAS O DELITOS INIMPUTABLES") ;
+        $("#pci").text("1.1% (2.378)") ;
+    });
     n9.click(function(){ 
-        $("#tituloci").text("Solicitud de Evaluación");
-        $("#tituloci").fadeTo("fast",1);
         $("#explicacionci").fadeTo("fast",1);
-        $("#explicacionci").text("Explicación causal de ingreso de Solicitud de Evaluación");
+        $("#explicacionci").text("Otras causales de ingreso, agrupa, principalmente, las siguientes causales de ingreso: “Vulneración de Derechos en estudio”; “Protección según orden del Tribunal; y “Ejerce bullying/matonaje o intimidación escolar”.");
         $(".niñes").fadeTo("fast",0.1);
-        $(".vic").fadeTo("fast",0.1);
         $(this).fadeTo("fast",1);
+    });
+    n9.mouseenter(function(){
+        $("#inicioci2").text("OTRAS CAUSALES");
+        $("#pci").text("27.7% (62.561)") ; 
     });
     
     /*n10.click(function(){ 
@@ -890,14 +990,14 @@ $(document).ready(function(){
     
     Canada.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Canada.css("fill","#096cb5")
-        pais.text("Canada")
-        pais_desc_1.text("Uwu")
-        pais_desc_2.text("Xd")
-        pais_desc_3.text("El sistema de infraccio de Canadá está diseñado para evitar la ")
+        pais.text("Canadá")
+        pais_desc_1.text("En Canadá, en caso de vulneración de los NNA se trabaja con el sistema de Foster Care,")
+        pais_desc_2.text("El sistema de Foster Care toma al gobierno como tutor legal del niñe o adolescente, y le provee a las residencias las facilidades para sostenerlo.")
+        pais_desc_3.text("El sistema de infraccio de Canadá está diseñado para evitar la entrada de les NNA a la cárcel; se redirigen los esfuerzos hacia la rehabilitación; es un programa establecido por ley. Distintas residencias del Foster Care.")
     });
 
     Canada.mouseleave(function(){
-        Canada.css("fill","#ececec")
+        Canada.css("fill","#4b7fa7")
     });
 
     EstadosUnidos.mouseenter(function(){ /* Se podrá poner una función no más?*/
@@ -909,11 +1009,11 @@ $(document).ready(function(){
     });
     
     EstadosUnidos.mouseleave(function(){
-        EstadosUnidos.css("fill","#ececec")
+        EstadosUnidos.css("fill","#4b7fa7")
     });
 
     Chile2.mouseenter(function(){
-        Chile2.css("fill","#096cb5")
+        Chile2.css("fill","#de161d")
         pais.text("Chile")
         pais_desc_1.text("En Chile la gran mayoría de los NNA desprotegidos residen en los centros del Sename. Pocos pueden optar por el programa Familia de Acogida Especializada, ya que esta disponible en regiones limitadas del país y no es un servicio masificado.")
         pais_desc_2.text("El Sename, como institución estatal dirige y subsidia la mayoría de los centros residenciales. Sin embargo, aparecen con el tiempo instituciones independientes, como ONGs.")
@@ -921,7 +1021,7 @@ $(document).ready(function(){
     });  
     
     Chile2.mouseleave(function(){
-        Chile2.css("fill","#ececec")
+        Chile2.css("fill","#cf3a3f")
         
     });
 
@@ -934,43 +1034,43 @@ $(document).ready(function(){
     });
 
     Mexico.mouseleave(function(){
-        Mexico.css("fill","#ececec")
+        Mexico.css("fill","#4b7fa7")
     });
 
     Colombia.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Colombia.css("fill","#096cb5")
         pais.text("Colombia")
         pais_desc_1.text("En el país existen las casas de acogida. Sin embargo, hay muchos niñes y jóvenes que aún van a internados y residencias.")
-        pais_desc_2.text("Xd")
+        pais_desc_2.text("Las casas de acogida y residencias son en su mayoría estatales. Los centros reciben en su mayoría menores que buscan ser adoptados.")
         pais_desc_3.text("Existe el Sistema Penal para Adolescentes y los Centros de Atención Especializada.")
     });
 
     Colombia.mouseleave(function(){
-        Colombia.css("fill","#ececec")
+        Colombia.css("fill","#4b7fa7")
     });
 
     Germany.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Germany.css("fill","#096cb5")
         pais.text("Alemania")
         pais_desc_1.text("Para situaciones críticas los niñes y jóvenes son enviados a casas de acogida. Sin embargo, a les adolescentes se les envía muchas veces a residencias comunes.")
-        pais_desc_2.text("")
+        pais_desc_2.text("Las instituciones, en su mayoría son privadas. La administración depende del gobierno regional.")
         pais_desc_3.text("Existen cárceles para jóvenes. Sin embargo, están enfocadas en la rehabilitación y reinserción de los jóvenes.")
     });
 
     Germany.mouseleave(function(){
-        Germany.css("fill","#ececec")
+        Germany.css("fill","#4b7fa7")
     });
 
     Argentina.mouseenter(function(){ /* Se podrá poner una función no más?*/
         Argentina.css("fill","#096cb5")
         pais.text("Argentina")
-        pais_desc_1.text("Uwu")
-        pais_desc_2.text("Xd")
-        pais_desc_3.text("Djdjdjd")
+        pais_desc_1.text("En Argentina, a los NNA que se les han vulnerado sus derechos se les introduce en casas de acogida (Foster Care). Se prefiere quedar con personas con afinidad.")
+        pais_desc_2.text("Las residencias se dividen entre estatales y privadas, sin embargo, últimamente predomina el camino a la desinstitucionalización.")
+        pais_desc_3.text("Los jóvenes que cometan un delito grave sólo se podrán castigar si el tiempo carcelario es de 2 años o más. Si tienen entre 16 y 18, pasarán el tiempo en un recinto especializado. Si no es grave, se pasa en un ambiente familiar con supervisión estatal.")
     });
 
     Argentina.mouseleave(function(){
-        Argentina.css("fill","#ececec")
+        Argentina.css("fill","#4b7fa7")
     });
 
 });
