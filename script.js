@@ -98,6 +98,42 @@ $(document).ready(function(){
         $(this).fadeTo("fast",1)
     })
 
+    var victima=$(".victima");
+    var victimario=$(".victimario")
+    var botonvictima=$("#botonvictima")
+    var botonvictimario=$("#botonvictimario")
+    var botonambos=$("#botonambos")
+    var botonniñes=$(".botonniñes")
+    botonniñes.mouseenter(function(){
+        $(this).fadeTo("fast",0.5)
+    });
+
+    botonniñes.mouseleave(function(){
+        $(this).fadeTo("fast",1);
+        
+    });
+    botonniñes.click(function(){
+        $(tci).hide();
+        $(niñes).fadeTo("fast",1);
+    });
+    botonvictima.click(function(){
+        $(".victimario").css("opacity", "0.15")
+        $(".victima").css("opacity", "1")
+    });
+
+    botonvictimario.click(function(){
+        $(".victima").css("opacity", "0.15");
+        $(".victimario").css("opacity", "1");
+
+    });
+
+    botonambos.click(function(){
+        $(".victima").css("opacity", "1")
+        $(".victimario").css("opacity", "1")
+        $(niñes).fadeTo("fast",1);
+    });
+
+    
     boton1.click(function(){
         r1.css("fill", "hsl(6, 78%, 87%)")
         r2.css("fill", "hsl(6, 78%, 84%)")

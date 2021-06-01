@@ -153,8 +153,8 @@ button {
 
 #DerechoA{
     border:solid;
-    height:600px;
-    width:400px;
+    height:500px;
+    width:200px;
 }
 
 
@@ -346,15 +346,21 @@ button {
     width: 100%;
     font-size: 18px;
     margin: 1% 1% 1% 1%;
-    padding: 1%;
+    border: 1%;
+    padding: 0%;
     border-radius: 5px;
     background-color: #3d3d3d;
+    text-align: center;
+}
+#inicioci{
+    width:50%;
 }
 #inicioci2{
     width: 100%;
     font-size: 25px;
+    border: 1%;
     margin: 1% 1% 1% 1%;
-    padding: 1%;
+    padding: 0%;
     border-radius: 5px;
     background-color: #3d3d3d;
     text-align: center;
@@ -363,21 +369,26 @@ button {
     width: 100%;
     font-size: 50px;
     margin: 1% 1% 1% 1%;
-    padding: 1%;
+    padding: 0%;
+    border: 1%;
     border-radius: 5px;
     background-color: #3d3d3d;
     text-align: center;
 }
 #subtit{
-    font-size:14px;
+    font-size:19px;
     padding: 5px;    
     margin: 1% 1% 1% 1%; 
-    
+    width: 100%;
 }
 
 #NinosSuperior{
     display:flex;
     justify-content: space-evenly;
+}
+#botonesalinear{
+    display:flex;
+    justify-content: center;
 }
 #porcentajeci{
     display: flex;
@@ -777,4 +788,28 @@ font-size: 12px;
     font-weight: bolder;
     margin: 3% 2% 7% 0%;
     text-align: right;
+}
+.botonniñes{
+    font-size: 20px;
+    display: block;
+    
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 180px;
+    height: 60px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    
+}
+#botonvictima{
+    background-color: #4b7fa7;
+}
+#botonvictimario{
+    background-color: #c95a5c;
+}
+#botonambos{
+    background-color: #3d3d3d;
 }
